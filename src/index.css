@@ -1,13 +1,85 @@
-body {
+*,
+::before,
+::after {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo{
+  width:95px;
+  height: 50px;
+  z-index: 100;
+  
+}
+
+/* NAV BAR  */
+
+.nav{
+  position: relative;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+.nav__list{
+  margin-left: auto;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+
+  
+}
+.iconify {
+  height: 36px;
+  width: 36px;}
+.nav__button{
+  /* margin-left: auto; */
+  margin-right: 0.5em;
+  padding: 0.5em;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  position: fixed;
+  right: 0;
+  z-index: 1000;
+}
+
+
+@media (max-width: 800px){
+.nav__list{
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 2rem;
+    top: 100px;
+    left :0 ;
+    width: 100%;
+    /* Hide nav links */
+    transform: translateY(-100%);
+    /* end */
+    transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+    height: calc(100vh - 100px);
+    background-color: white;
+    border-top: 1px solid black;
+    
+     
+  }
+.nav__open{
+  /* show links */
+  transform: translateY(0);
+}
+}
+
+
+/* MEDIA QUERIES */
+@media (min-width: 800px) {
+  /* DONT SHOW BUTTON ON SCREEN MORE THEN 800PX */
+  .nav__button {
+    display: none;
+  }
 }
