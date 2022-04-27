@@ -5,24 +5,49 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root{
+  --fs-h1: 2.25rem;
+  --fs-h2: 0.75rem;
+  --fs-h3: 0.85rem;
+  --fs-body: 0.75rem;
 
-.logo{
-  width:95px;
-  height: 50px;
-  z-index: 100;
-  
+  --ff-primary:'Inter', sans-serif;
+  --ff-secondary: 'Poppins', sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --clr-white: white;
+  --clr-black: #272222;
+  --clr-grayStrong: #736C6C;
+  --clr-grayLight: #C4C4C4;
+  --clr-accent: #8F00FF;
+}
+
+body{
+  font-family: var(--ff-primary);
+  color: var(--clr-black);
+}
+
+section {
+  min-height: 100vh;
 }
 
 /* NAV BAR  */
 
+.logo{
+  width:75px;
+  height: 30px;
+  z-index: 100;
+}
 .nav{
   position: relative;
   padding: 1rem;
   width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  
+  justify-content: space-between;  
 }
 .nav__list{
   margin-left: auto;
@@ -30,14 +55,12 @@
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
-
-  
 }
 .iconify {
   height: 36px;
-  width: 36px;}
+  width: 36px;
+}
 .nav__button{
-  /* margin-left: auto; */
   margin-right: 0.5em;
   padding: 0.5em;
   background: transparent;
@@ -54,25 +77,142 @@
     position: absolute;
     flex-direction: column;
     align-items: center;
-    padding-top: 2rem;
-    gap: 2rem;
-    top: 100px;
-    left :0 ;
+    justify-content: space-evenly;
+    top:0;
+    left:0;
+    height: 100vh;
     width: 100%;
     /* Hide nav links */
-    transform: translateY(-100%);
+    transform: translateY(-150%);
     /* end */
-    transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
-    height: calc(100vh - 100px);
+    transition: all .90s ease;
     background-color: white;
-    border-top: 1px solid black;
-    
-     
+    opacity: .95;
+    z-index: 100;
   }
 .nav__open{
   /* show links */
   transform: translateY(0);
+  
 }
+}
+/* HERO SECTION */
+.hero__intro{
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero__h1{
+  padding: 1rem 1rem 0 1rem;
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h1);
+  
+  
+}
+.span{
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+  color: var(--clr-grayLight);
+}
+.span__dark{
+  color: var(--clr-black);
+}
+.hero__h2{
+  padding: 1rem 1rem 0 1rem;
+  font-size: var(--fs-h2);
+  letter-spacing: 3.5px;
+  line-height: 17px;
+  
+}
+.span__name{
+  font-weight: var(--fw-regular);
+}
+.block__container{
+  position: relative;
+ height: 400px;
+  /* width: 100%;
+  height: 100%; */
+  
+}
+.circle__container{
+  position: absolute;
+  
+  top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+ 
+  
+}
+.circle__img{
+ 
+  width: 250px;
+  height: 250px;
+    animation: rotation 45s infinite linear;
+}
+.hero__img{
+  width: 200px;
+  height: 60px;
+  object-fit: cover;
+  position: absolute;
+  top: 20px;
+  left: 10px;
+}
+.hero__img2{
+  top: 95px;
+  left: 50px;
+  opacity: .90;
+  animation: scale 15s ease-in-out infinite;
+}
+.hero__img3{
+  top: 170px;
+  left: 30px;
+  animation: slide 15s ease-in-out infinite;
+}
+
+.line{
+  /* content: ""; */
+position: absolute;
+width: 400px;
+height: 0px;
+left: -30%;
+top: 50%;
+border: 1px solid #C4C4C4;
+transform: rotate(-44.39deg);
+z-index: -1;
+}
+
+.triangle{
+  position: absolute;
+  width:60px;
+  height:60px;
+  left: -5%;
+  top: 50%;
+  
+}
+.btn{
+  
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 40px;
+  border: 1px solid var(--clr-grayStrong);
+  margin: 0 auto;
+  text-align: center;
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-h3);
+  color: var(--clr-accent);
+  text-decoration: none;
+
 }
 
 
@@ -82,4 +222,43 @@
   .nav__button {
     display: none;
   }
+}
+
+
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes scale{
+  0% {
+      transform: scale(1.0);}
+      
+  50% {
+      transform: scale(1.1);
+      
+  }
+  100% {
+    transform: scale(1.0);
+    
+}
+}
+
+@keyframes slide{
+  0% {
+    transform: translateX(0)}
+      
+  50% {
+    transform: translateX(-40px);
+      
+  }
+  100% {
+    transform: translateX(0);
+    
+}
 }
