@@ -1,0 +1,39 @@
+:root{
+    --nav-gap:1rem
+}
+
+.dot__nav{
+    padding: var(--nav-gap);
+    position:fixed ;
+    left: 0;
+    top: 50%;  
+    transform: translateY(-50%);
+    z-index: 100;
+    
+}
+.dot__item{
+    display: flex;
+    align-items: center;
+    padding-bottom: var(--nav-gap);
+}
+.dot__link{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    margin-right: var(--nav-gap);
+    transition: transform 0.2s;
+}
+.dot__link-selected{
+    background-color: black;
+    transform: scale(1.2);
+}
+.dot__link:hover ~ .dot__label {
+opacity: 1;
+}
+.dot__label{
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 0.1s;
+}

@@ -1,8 +1,12 @@
-
-import Navbar from "./Components/Navbar"
-import Hero from "./Components/Hero";
-
 import React from "react";
+import Navbar from "./Components/Navbar"
+import DotMenu from "./Components/DotMenu";
+import Hero from "./Components/HeroSection";
+import AboutSection from "./Components/AboutSection";
+import WorkSection from "./Components/WorkSection";
+import ConstactSection from "./Components/ContactSection";
+
+
 
 
 export default function App() {
@@ -13,9 +17,9 @@ export default function App() {
     function toggleNavigation(){
          setNavOpen(prevState => !prevState)
      }
- 
-    
- 
+     
+    const section = document.querySelector(".section")
+     console.log(section)
   return(
     <>
     <header>
@@ -24,7 +28,11 @@ export default function App() {
       onClick={toggleNavigation}
       />
     </header>
+    <DotMenu/>
     <Hero/>
+    <WorkSection/>
+    <AboutSection/>
+    <ConstactSection/>
     </>
   )
 }

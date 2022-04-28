@@ -1,7 +1,7 @@
 import HeroAnimation from "./HeroAnimation"
 export default function Hero(){
     return(
-    <section>
+    <section id="home">
         <div className="hero__intro">
 
                 <h1 className="hero__h1">

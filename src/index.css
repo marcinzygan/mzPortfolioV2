@@ -23,7 +23,9 @@
   --clr-grayLight: #C4C4C4;
   --clr-accent: #8F00FF;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body{
   font-family: var(--ff-primary);
   color: var(--clr-black);
@@ -59,6 +61,7 @@ section {
 .iconify {
   height: 36px;
   width: 36px;
+  color: var(--clr-grayStrong);
 }
 .nav__button{
   margin-right: 0.5em;
@@ -129,10 +132,11 @@ section {
 }
 .span__name{
   font-weight: var(--fw-regular);
+  padding-left: 1.2rem;
 }
 .block__container{
   position: relative;
- height: 400px;
+ height: 300px;
   /* width: 100%;
   height: 100%; */
   
@@ -140,9 +144,9 @@ section {
 .circle__container{
   position: absolute;
   
-  top: 50%;  
+  top: 60%;  
     left: 50%; 
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
   /* display: flex;
   flex-direction: column;
   align-items: center;
@@ -154,7 +158,7 @@ section {
  
   width: 250px;
   height: 250px;
-    animation: rotation 45s infinite linear;
+    animation: rotation 90s infinite linear;
 }
 .hero__img{
   width: 200px;
@@ -180,10 +184,10 @@ section {
   /* content: ""; */
 position: absolute;
 width: 400px;
-height: 0px;
+height: 1px;
 left: -30%;
 top: 50%;
-border: 1px solid #C4C4C4;
+background-color: var(--clr-grayLight);
 transform: rotate(-44.39deg);
 z-index: -1;
 }
@@ -204,7 +208,7 @@ z-index: -1;
   align-items: center;
   width: 140px;
   height: 40px;
-  border: 1px solid var(--clr-grayStrong);
+  border: 1px solid var(--clr-grayLight);
   margin: 0 auto;
   text-align: center;
   font-family: var(--ff-primary);
