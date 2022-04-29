@@ -18,8 +18,7 @@ export default function App() {
          setNavOpen(prevState => !prevState)
      }
      
-    const section = document.querySelector(".section")
-     console.log(section)
+    
   return(
     <>
     <header>
@@ -30,8 +29,8 @@ export default function App() {
     </header>
     <DotMenu/>
     <Hero/>
-    <WorkSection/>
     <AboutSection/>
+    <WorkSection/>
     <ConstactSection/>
     </>
   )

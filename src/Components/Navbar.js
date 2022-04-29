@@ -1,7 +1,7 @@
 import { Icon } from '@iconify/react';
 import logo from "../Images/logo.svg"
 import React from 'react';
-
+import {Link} from "react-scroll"
 
 
 
@@ -24,10 +24,10 @@ export default function Navbar(props){
         </button>
 
             <ul className={!props.navOpen ?  "nav__list" : "nav__open nav__list"}>
-                <li className="nav__li" onClick={props.onClick}><a href='#home'>HOME</a></li>
-                <li className="nav__li" onClick={props.onClick}><a href='#about'>ABOUT</a></li>
-                <li className="nav__li" onClick={props.onClick}><a href='#work'>WORK</a></li>
-                <li className="nav__li" onClick={props.onClick}><a href='#contact'>CONTACT</a></li>
+                <li className="nav__li" ><Link  onClick={props.onClick} to="home" className='nav__link' spy={true} smooth={true} offset={-100}>Home</Link></li>
+                <li className="nav__li" ><Link onClick={props.onClick} to="about" className='nav__link' spy={true} smooth={true} offset={-30}>About</Link></li>
+                <li className="nav__li" ><Link onClick={props.onClick} to="work" className='nav__link' spy={true} smooth={true} offset={-30}>Work</Link></li>
+                <li className="nav__li" ><Link onClick={props.onClick} to="contact" className='nav__link' spy={true} smooth={true} offset={-30}>Contact</Link></li>
             </ul>
     </nav>
     )

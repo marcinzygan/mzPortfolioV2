@@ -1,34 +1,40 @@
 import React from "react"
 import "./DotMenuStyle.css"
+import {Link} from "react-scroll"
+
+
+
 export default function DotMenu(){
 
-    const [dotActive , setDotActive] = React.useState(false)
+//     const [dotActive , setDotActive] = React.useState(false)
     
-    function activeDot(){
-      setDotActive(prevState => !prevState)
-  }
+//     function activeDot(){
+       
+//       setDotActive(prevState => !prevState)
+      
+//   }
  
     return(
        
         <nav className="dot__nav">
             <div className="dot__item">
-                <a href="#home" className={!dotActive ? "dot__link" : "dot__link dot__link-selected"} onClick={activeDot}> </a>
+                <Link to="home" activeClass="dot__link-selected" spy={true} smooth={true} offset={-100} className="dot__link"> </Link>
                 <span className="dot__label">Home</span>
             </div>
 
             <div className="dot__item">
-                <a href="#about" className="dot__link" > </a>
+            <Link to="about" activeClass="dot__link-selected" spy={true} smooth={true} offset={-30} className="dot__link"> </Link>
                 <span className="dot__label">About Us</span>
             </div>
 
             <div className="dot__item">
-                <a href="#work" className="dot__link"> </a>
+            <Link to="work" activeClass="dot__link-selected" spy={true} smooth={true} offset={-30} className="dot__link"> </Link>
                 <span className="dot__label">My Work</span>
             </div>
 
             <div className="dot__item">
-                <a href="#contact" className="dot__link"> </a>
-                <span className="dot__label">Get In Touch</span>
+            <Link to="contact" activeClass="dot__link-selected" spy={true} smooth={true} offset={-30} className="dot__link"> </Link>
+                <span className="dot__label">Contact</span>
             </div>
         </nav>
     )
