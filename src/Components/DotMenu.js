@@ -23,15 +23,15 @@ export default function DotMenu(){
             </div>
 
             <div className="dot__item">
-            <Link to="about" activeClass="dot__link-selected" spy={true} smooth={true} offset={-30} className="dot__link"> </Link>
-                <span className="dot__label">About Us</span>
-            </div>
-
-            <div className="dot__item">
             <Link to="work" activeClass="dot__link-selected" spy={true} smooth={true} offset={-30} className="dot__link"> </Link>
                 <span className="dot__label">My Work</span>
             </div>
 
+            <div className="dot__item">
+            <Link to="about" activeClass="dot__link-selected" spy={true} smooth={true} offset={-30} className="dot__link"> </Link>
+                <span className="dot__label">About Me</span>
+            </div>
+            
             <div className="dot__item">
             <Link to="contact" activeClass="dot__link-selected" spy={true} smooth={true} offset={-30} className="dot__link"> </Link>
                 <span className="dot__label">Contact</span>

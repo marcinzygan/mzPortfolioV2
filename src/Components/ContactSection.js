@@ -1,7 +1,15 @@
+import Heading from "./Heading"
+
+
+
 export default function ConstactSection(){
     return(
         <section id="contact">
-            <div>CONTACT</div>
+
+        <Heading
+        sectionHeading={"Contact"}
+        />
+            
         </section>
     )
 }

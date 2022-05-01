@@ -9,6 +9,7 @@
   --fs-h1: 2.25rem;
   --fs-h2: 0.75rem;
   --fs-h3: 0.85rem;
+  --fs-heading: 1rem;
   --fs-nav: 1rem;
   --fs-body: 0.75rem;
 
@@ -58,7 +59,7 @@ section {
   list-style: none;
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
+  gap: 1rem;
   
 }
 .iconify {
@@ -224,6 +225,7 @@ overflow: hidden;
   
 }
 .btn{
+  cursor: pointer;
   position: relative;
   display: flex;
   justify-content: center;
@@ -248,6 +250,77 @@ overflow: hidden;
   display: none;
 }
 
+/* SECTIONS HEADING */
+
+.sections__heading{
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-heading);
+  font-weight: var(--fw-bold);
+  position: relative;
+  width: max-content;
+  color: var(--clr-grayStrong);
+}
+.sections__heading::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  top: 90%;
+  background-color: var(--clr-grayLight);
+}
+.sections__span{
+  
+  padding-left: 0.5rem;
+  font-size: 1.8rem;
+  letter-spacing: 4px;
+  color: var(--clr-accent);
+}
+/* MY WORK SECTION */
+.work__section{
+  position: relative;
+}
+.project__background{
+  margin-top: 2rem;
+  background: url(../src/Images/myWork.svg);
+  background-repeat: no-repeat;
+}
+.project__container{
+  position: relative;
+  margin-top: 2rem;
+  
+  height: 100%;
+  /* height: 45px;
+  width: 195px; */
+  
+}
+.project__img{
+  cursor: pointer;
+  /* padding-top: 2rem; */
+  height: 45px;
+  width: 195px;
+  object-fit: cover;
+}
+.project__img:hover ~ .project__container::after{
+  background-color: #8F00FF;
+}
+.project__container::after{
+  content: "";
+  display: block;
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: var(--clr-grayLight);
+  left: -0.5%;
+  bottom: -3%;
+}
+
+.section__number{
+  position: absolute;
+  bottom:0;
+  right:0;
+}
 /* MEDIA QUERIES */
 @media (min-width: 800px) {
   :root{
@@ -263,9 +336,13 @@ overflow: hidden;
   .nav{
     padding: 2rem 3rem;
   }
-  .nav__li{
-    margin-right: 0.5rem;
+  .logo{
+    cursor: pointer;
+    position: fixed;
   }
+  /* .nav__li{
+    margin-right: 0.5rem;
+  } */
 
   /* DONT SHOW BUTTON ON SCREEN MORE THEN 800PX */
   .nav__button {
@@ -303,8 +380,11 @@ overflow: hidden;
     --fs-h2: 1rem; */
     --fs-h3: 1.2rem;
     --fs-nav: 1rem;
+    --fs-heading:1.2rem;
     --fs-body: 1.75rem;}
-     
+ .nav__list{
+   gap:3.5rem;
+ }    
 .hero__container{
   padding-top: 8.5rem;
   display: flex;
@@ -364,6 +444,7 @@ overflow: hidden;
   :root{
     --fs-h1: 4.25rem;
     --fs-nav:1.1rem;
+    
     }
  }
 

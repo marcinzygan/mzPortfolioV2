@@ -20,8 +20,8 @@
     cursor: pointer;
     border: 1px solid var(--clr-grayLight);
     border-radius: 50%;
-    height: 15px;
-    width: 15px;
+    height: 18px;
+    width: 18px;
     margin-right: var(--nav-gap);
     transition: transform 0.2s;
     opacity: 0.9;

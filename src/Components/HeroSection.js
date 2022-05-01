@@ -1,4 +1,5 @@
 import HeroAnimation from "./HeroAnimation"
+import {Link} from "react-scroll"
 export default function Hero(){
     return(
 <div className="hero__section">
@@ -21,7 +22,7 @@ export default function Hero(){
                 Front end Developer 
                 <span className="span">{"</span>"}</span> </div>
                 <span className="span">{"<h2>"}</span> 
-        </h2><a href="#work" className="btn">My Work</a>
+        </h2><Link to="work" className="btn" spy={true} smooth={true} offset={-30} >My Work</Link>
     </div>
         
         <HeroAnimation/>

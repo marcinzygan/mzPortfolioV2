@@ -29,8 +29,8 @@ export default function App() {
     </header>
     <DotMenu/>
     <Hero/>
-    <AboutSection/>
     <WorkSection/>
+    <AboutSection/>
     <ConstactSection/>
     </>
   )
