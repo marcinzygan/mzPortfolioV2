@@ -1,5 +1,6 @@
 import HeroAnimation from "./HeroAnimation"
 import {Link} from "react-scroll"
+
 export default function Hero(){
     return(
 <div className="hero__section">

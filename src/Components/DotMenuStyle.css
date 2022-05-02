@@ -22,7 +22,7 @@
     border-radius: 50%;
     height: 18px;
     width: 18px;
-    margin-right: var(--nav-gap);
+    /* margin-right: var(--nav-gap); */
     transition: transform 0.2s;
     opacity: 0.9;
 }

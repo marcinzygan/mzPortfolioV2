@@ -1,52 +1,39 @@
 import Heading from "./Heading"
-
+import { ProjectsData } from "./ProjectsData"
 import Project from "./Project"
-import projectImg1 from "../Images/project1.jpg"
+
 
 
 
 export default function WorkSection(){
 
-
+const allProjects = ProjectsData.map(data => 
+    <Project
+        key={data.id}
+        // id={data.id}
+        projectImg={data.mainImage}
+        images={data.images}
+        alt={data.name}
+        projectName={data.name}
+        projectContent={data.content}  
+    />
+    )
 
 
     return(
-        <section id="work" className="work__section" >
+    <section id="work" className="work__section" >
 
         <Heading
         sectionHeading={"My Work"}
         />
+
     <div className="project__background">
-        <Project
-        projectImg={projectImg1}
-        alt={"ProjectAlt1"}
-        projectName={"Art Website"}
-        projectContent={"Lorem22"}  
-        />
-
-        <Project
-        projectImg={projectImg1}
-        alt={"ProjectAlt2"}
-        projectName={"Project 2"}
-        projectContent={"Lorem33"}
-        />
-
-        <Project
-        projectImg={projectImg1}
-        alt={"ProjectAlt3"}
-        projectName={"Project 3"}
-        projectContent={"Lorem44"}
-        />
-
-        <Project
-        projectImg={projectImg1}
-        alt={"ProjectAlt4"}
-        projectName={"Project 3"}
-        projectContent={"Lorem55"}
-        />
+        {/* Displays all data mapped as a project component */}
+        {allProjects}
     </div>
   
     <div className="section__number">01</div>
-        </section>
+
+    </section>
     )
 }

@@ -7,7 +7,7 @@ export default function Project(props){
 
     function modalToggle(){
         setIsModalOpen(prevState => !prevState)
-        console.log(isModalOpen)
+        
     }
     return(
         <>
@@ -16,10 +16,12 @@ export default function Project(props){
         </div>
 
           <Modal
+          id={props.id}
           isModalOpen={isModalOpen}
           onClick={modalToggle}
           modalContent={props.projectContent}
           projectName={props.projectName}
+          images={props.images}
           />
           </>
     )
