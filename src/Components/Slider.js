@@ -61,11 +61,11 @@ const imagesDots = props.images.map((image , index) =>
         {/* </div> */}
 
         <div className="sliderButtons__container">
-        <Icon icon="akar-icons:arrow-left" className="slider_arrow" onClick={prevSlide}/> 
+        <Icon icon="akar-icons:arrow-left" className="slider__arrow left" onClick={prevSlide}/> 
         
             {imagesDots}
         
-        <Icon icon="akar-icons:arrow-right" className="slider_arrow" onClick={nextSlide}/>
+        <Icon icon="akar-icons:arrow-right" className="slider__arrow right" onClick={nextSlide}/>
         </div>
         </>
     )

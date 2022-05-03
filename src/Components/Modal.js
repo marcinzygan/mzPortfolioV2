@@ -24,7 +24,8 @@ export default function Modal(props){
                 name={props.projectName}
                 />
 
-                <p className='modal__p'>{props.modalContent}</p>
+                <p className='modal__p modal__p-top'>{props.modalContent}</p>
+                <p className='modal__p'>{props.modalContent2}</p>
     </div>
     )
 }

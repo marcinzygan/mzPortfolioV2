@@ -19,9 +19,10 @@ export default function Hero(){
                 <span className="span">{"<h2>"}</span>
                 <span className="span__name">I am Marcin Zygan </span></div>
             <div className="span__space">
-                <span className="span">{"<span>"}</span>
-                Front end Developer 
+                <span className="span">{"<span>"}</span><br></br>
+                <p className="job__title">Front end Developer , Graphic Designer</p>
                 <span className="span">{"</span>"}</span> </div>
+                
                 <span className="span">{"<h2>"}</span> 
         </h2><Link to="work" className="btn" spy={true} smooth={true} offset={-30} >My Work</Link>
     </div>
@@ -29,7 +30,7 @@ export default function Hero(){
         <HeroAnimation/>
         
     </div>
-    
+    <span className="span span__bottom" >{"</section>"}</span>
 </div>
     )
 }

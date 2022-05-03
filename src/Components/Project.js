@@ -13,6 +13,7 @@ export default function Project(props){
         <>
         <div className="project__container" >
             <img className="project__img" src={props.projectImg} alt={props.alt} onClick={modalToggle}></img>
+            <div className="project__overlay">{props.projectName}</div>
         </div>
 
           <Modal
@@ -20,6 +21,7 @@ export default function Project(props){
           isModalOpen={isModalOpen}
           onClick={modalToggle}
           modalContent={props.projectContent}
+          modalContent2={props.projectContent2}
           projectName={props.projectName}
           images={props.images}
           />

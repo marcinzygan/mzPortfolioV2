@@ -15,7 +15,8 @@ const allProjects = ProjectsData.map(data =>
         images={data.images}
         alt={data.name}
         projectName={data.name}
-        projectContent={data.content}  
+        projectContent={data.content}
+        projectContent2={data.content2}  
     />
     )
 
@@ -31,8 +32,9 @@ const allProjects = ProjectsData.map(data =>
         {/* Displays all data mapped as a project component */}
         {allProjects}
     </div>
+    
   
-    <div className="section__number">01</div>
+    <p className="section__number">01</p>
 
     </section>
     )
