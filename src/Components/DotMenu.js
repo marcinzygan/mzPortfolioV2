@@ -6,13 +6,7 @@ import {Link} from "react-scroll"
 
 export default function DotMenu(){
 
-//     const [dotActive , setDotActive] = React.useState(false)
-    
-//     function activeDot(){
-       
-//       setDotActive(prevState => !prevState)
-      
-//   }
+
  
     return(
        

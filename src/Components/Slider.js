@@ -29,11 +29,11 @@ export default function Slider(props){
     // Function for next image , if current image is equal to array lenght then back to slide 0 if not go to next slide 
     const nextSlide = () => {
         setCurrentSlide (currentSlide === sliderLength -1 ? 0 : currentSlide +1)
-        // console.log(currentSlide)
+        
     }
     const prevSlide = () => {
         setCurrentSlide (currentSlide === 0 ? sliderLength -1 : currentSlide -1)
-        // console.log(currentSlide)
+        
     }
     function moveDot(index) {
         setCurrentSlide(index)

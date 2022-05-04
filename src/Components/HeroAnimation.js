@@ -3,6 +3,7 @@ import Hero1 from "../Images/hero1.jpg"
 import Hero2 from "../Images/hero2.jpg"
 import Hero3 from "../Images/hero3.jpg"
 import Triangle from "../Images/triangle.svg"
+
 export default function HeroAnimation(){
     return(
         <div className="block__container">
