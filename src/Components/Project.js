@@ -1,22 +1,23 @@
-import Modal from "./Modal"
 import React from "react"
 
 export default function Project(props){
 
-    const [isModalOpen , setIsModalOpen] = React.useState(false)   
+    // const [isModalOpen , setIsModalOpen] = React.useState(false)   
 
-    function modalToggle(){
-        setIsModalOpen(prevState => !prevState)
+    // function modalToggle(){
         
-    }
+    //     setIsModalOpen(prevState => !prevState)
+        
+        
+    // }
     return(
         <>
-        <div className="project__container" >
-            <img className="project__img" src={props.projectImg} alt={props.alt} onClick={modalToggle}></img>
+        <div className="project__container" onClick={props.onClick}>
+            <img className="project__img" src={props.projectImg} alt={props.alt} ></img>
             <div className="project__overlay">{props.projectName}</div>
         </div>
 
-          <Modal
+          {/* <Modal
           id={props.id}
           isModalOpen={isModalOpen}
           onClick={modalToggle}
@@ -24,7 +25,7 @@ export default function Project(props){
           modalContent2={props.projectContent2}
           projectName={props.projectName}
           images={props.images}
-          />
+          /> */}
           </>
     )
 }
