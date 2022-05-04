@@ -9,7 +9,7 @@ export const ProjectsData = [
         "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
         
     ],
-        content:"lorem 9999 99999999 this<br>99999 9999999999 432532523432 5ef243523 4325 6",
+        content:"This Website was designed and developed for a client as an art portfolio.",
         content2:"hello is it me that you looking for?"
     },
 

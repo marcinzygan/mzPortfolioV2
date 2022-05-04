@@ -52,7 +52,7 @@ const imagesDots = props.images.map((image , index) =>
 )
 
     return(
-        <>
+        <div className="slider__container">
 
         {/* <div className="slider__container"> */}
             
@@ -67,6 +67,6 @@ const imagesDots = props.images.map((image , index) =>
         
         <Icon icon="akar-icons:arrow-right" className="slider__arrow right" onClick={nextSlide}/>
         </div>
-        </>
+        </div>
     )
 }

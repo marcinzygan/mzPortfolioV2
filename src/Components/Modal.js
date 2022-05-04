@@ -6,27 +6,30 @@ export default function Modal(props){
         <div className='modal modal__open'>
             {props.modalContent.map((data)=> {
                 return(
-                    <div key={data.id}>
-                    <div className=' span__modal-buttonContainer'>
-
+    <div key={data.id} className="modal__container">
+            
+        <div className='modal__title-container'>
+            <div className=' span__modal-buttonContainer'>
                     <span className="span">{"<h3>"}</span>
-
                <Icon 
                 icon="ep:close-bold" 
                 className='modal__icon' 
                 onClick={props.onClick}
                />
-
-                </div>
+            </div>
                 <h3 className='modal__title'>{data.name} </h3>
                 <span className="span span__modal" >{"</h3>"}</span>
+        </div>
+
                 <Slider
                 images={data.images}
                 name={data.name}
                 />
+                <div className='modal__content-container'>
                   <p className='modal__p modal__p-top'>{data.content}</p>
                  <p className='modal__p'>{data.content2}</p>
-                </div>
+                 </div>
+    </div>
                 )
             })}
         </div>
