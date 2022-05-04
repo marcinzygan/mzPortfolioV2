@@ -302,7 +302,7 @@ overflow: hidden;
   background-repeat: repeat-x;
 }
 .project__background{
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -446,7 +446,7 @@ overflow: hidden;
 }
 .section__number{
   position: absolute;
-  bottom:15%;
+  bottom:0;
   right:0;
   z-index: 1;
   font-size: 220px;
@@ -503,6 +503,95 @@ overflow: hidden;
 /* ABOUT SECTION */
 .about__section{
   position: relative;
+}
+.about__container{
+  margin-top: 4rem;
+}
+.about__txt{
+  padding: 1rem 0;
+}
+.span__about-bottom{
+  display: flex;
+  justify-content: flex-end;
+}
+.photo__about-container{
+  
+  background: url(../src/Images/code.svg);
+  
+}
+.about__img{
+  padding-bottom: 2rem;
+}
+.about__animation{
+ 
+  margin: 0 auto;
+  margin-top:2rem ;
+  margin-bottom: 2rem;
+  position: relative;
+  /* display: flex;
+  flex-direction: column; */
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+}
+.html__icon{
+  position: absolute;
+  top:-10%;
+  left: 50%;
+  transform: translate(-50% , 10%);
+  color: var(--clr-grayLight);
+}
+.css__icon{
+  position: absolute;
+  bottom:-10%;
+  left: 50%;
+  transform: translate(-50% , 0%);
+  color: var(--clr-grayLight);
+}
+.react__icon{
+  position: absolute;
+  top:50%;
+  left: -10%;
+  transform: translate(10% , -50%);
+  color: var(--clr-grayLight);
+}
+.inner__circle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--clr-accent);
+}
+.triangle__about{
+position: absolute;
+display: none;
+top: -30%;
+left: 50%;
+transform: translate(50%,-30%);
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 100px 173.2px 100px;
+border-color: transparent transparent #C4C4C4 transparent;
+opacity: 0.2;
+
+}
+.about__animation::after{
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='100' ry='100' stroke='%23C4C4C4FF' stroke-width='3' stroke-dasharray='50%25%2c 13%25' stroke-dashoffset='51' stroke-linecap='butt'/%3e%3c/svg%3e");
+  width: 200px;
+  height: 200px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  border-radius: 50%;
+  z-index: -1;
+ 
 }
 /* CONTACT SECTION */
 .contact__section{
