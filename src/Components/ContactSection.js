@@ -9,7 +9,9 @@ export default function ConstactSection(){
         <Heading
         sectionHeading={"Contact"}
         />
+        <div className="section__number-container">
             <p className="section__number">03</p>
+        </div>
         </section>
     )
 }

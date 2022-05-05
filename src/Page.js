@@ -17,7 +17,18 @@ export default function App() {
     function toggleNavigation(){
          setNavOpen(prevState => !prevState)
      }
-     
+
+//  Set state for icons in About section
+const [isIconClicked , setIsIconClicked] = React.useState(false)   
+function toggleIcons(id){
+  setIsIconClicked(prevState => 
+    id === id ?
+    !prevState :
+    prevState
+  )
+    
+  console.log(id)
+}
     
   return(
     <>
@@ -30,7 +41,11 @@ export default function App() {
     <DotMenu/>
     <Hero/>
     <WorkSection/>
-    <AboutSection/>
+    <AboutSection
+    onClick={toggleIcons}
+    isIconClicked={isIconClicked}
+    
+    />
     <ConstactSection/>
     </>
   )

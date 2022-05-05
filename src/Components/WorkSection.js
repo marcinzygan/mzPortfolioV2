@@ -61,9 +61,9 @@ const allProjects = ProjectsData.map(data =>
         
     </div>
     
-  
+    <div className="section__number-container">
     <p className="section__number">01</p>
-
+        </div>
     </section>
     )
 }
