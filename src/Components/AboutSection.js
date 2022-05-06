@@ -1,7 +1,7 @@
 import Heading from "./Heading"
 import AboutImg from "../Images/marcin.jpg"
 import { Icon } from "@iconify/react"
-import { nanoid } from "nanoid"
+
 
 
 
@@ -36,23 +36,23 @@ export default function AboutSection(props){
          <div className="about__animation">
         <Icon 
         icon="ci:file-html" 
-        className={!props.isIconClicked ? "html__icon" : "html__icon html__icon-active"}
-        onClick={()=>props.onClick(nanoid())}
+        className={!props.isHtmlIconClicked ? "html__icon" : "html__icon html__icon-active"}
+        onClick={props.HtmlIconToggle}
         
         />
         <Icon 
         icon="ion:logo-react" 
-        className={!props.isIconClicked ? "react__icon" : "react__icon react__icon-active"}
-        onClick={props.onClick}
-        id={nanoid()}
+        className={!props.isReactIconClicked ? "react__icon" : "react__icon react__icon-active"}
+        onClick={props.ReactIconToggle}
+        
         />
         <Icon 
         icon="ci:file-css" 
-        className="css__icon"
-        
+        className={!props.isCssIconClicked ? "css__icon" : "css__icon css__icon-active"}
+        onClick={props.CssIconToggle}
         />
         <div className="inner__circle"></div>
-        <div className="rectangle__about"></div>
+        <div className={!props.isAllIconsClicked ? "rectangle__about" : "rectangle__about rectangle__about-active"}></div>
         </div>
 
         </div>

@@ -558,9 +558,10 @@ overflow: hidden;
   transform: translate(-50% , 10%);
   color: var(--clr-grayLight);
   cursor: pointer;
+  z-index: 2;
 }
 .html__icon-active{
-  color: rgb(250, 42, 42);
+  color: var(--clr-accent);
 }
 .css__icon{
   position: absolute;
@@ -569,9 +570,10 @@ overflow: hidden;
   transform: translate(-50% , 0%);
   color: var(--clr-grayLight);
   cursor: pointer;
+  z-index: 2;
 }
 .css__icon-active{
-color: rgb(31, 108, 250);
+color: var(--clr-accent);
 }
 .react__icon{
   position: absolute;
@@ -581,9 +583,10 @@ color: rgb(31, 108, 250);
   color: var(--clr-grayLight);
   cursor: pointer;
   animation: rotation 10s infinite linear;
+  z-index: 2;
 }
 .react__icon-active{
-  color: #60dafb;
+  color: var(--clr-accent);
 }
 .inner__circle{
   position: absolute;
@@ -598,19 +601,17 @@ color: rgb(31, 108, 250);
 .rectangle__about{
 position: absolute;
 /* display: none; */
+width: 190px;
+height: 190px;
+border-radius: 50%;
 top: 50%;
 left: 50%;
 transform: translate(-50%,-50%);
-width: 150px;
-height: 25px;
-
-/* border-style: solid;
-border-width: 0 100px 173.2px 100px;
-border-color: transparent transparent #C4C4C4 transparent; */
-
-background-color: black;
-
-
+z-index: 1;
+background-color: white;
+}
+.rectangle__about-active{
+  display: none;
 }
 .about__animation::after{
   content: "";
@@ -859,8 +860,8 @@ grid-row: 3/4;
     background-size: cover;
   }
   .rectangle__about{
-    width: 300px;
-    height: 50px;
+    width: 390px;
+    height: 390px;
   }
   .html__icon{
     width: 70px;
