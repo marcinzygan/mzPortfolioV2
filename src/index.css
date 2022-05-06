@@ -290,8 +290,9 @@ overflow: hidden;
   background-color: var(--clr-grayLight);
 }
 .section__subHeading{
+  font-family: var(--ff-secondary);
   font-size: var(--fs-h3);
-  color: var(--clr-grayLight);
+  color: var(--clr-grayStrong);
   /* font-weight: var(--fw-bold); */
   padding-top:1rem ;
   letter-spacing: 1px;
@@ -363,8 +364,7 @@ overflow: hidden;
   border-right: 200px solid var(--clr-grayLight);
   border-bottom: 100px solid transparent;
   opacity: 0.1;
-  z-index: -1;
-  
+  z-index: -1; 
 }
 
 
@@ -638,6 +638,12 @@ background-color: white;
 /* CONTACT SECTION */
 .contact__section{
   position: relative;
+}
+.email__message{
+  display: none;
+}
+.email__message-visible{
+  display: block;
 }
 /* MEDIA QUERIES */
 @media (min-width: 360px){
