@@ -16,6 +16,7 @@ export default function AboutSection(props){
 
         <Heading
         sectionHeading={"About Me"}
+        sectionSubHeading={"Few words about myself."}
         />
 
     <div className="about__container">

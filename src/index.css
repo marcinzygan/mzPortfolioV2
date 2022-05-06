@@ -278,7 +278,7 @@ overflow: hidden;
   font-weight: var(--fw-bold);
   position: relative;
   width: max-content;
-  color: var(--clr-grayStrong);
+  color: var(--clr-black);
 }
 .sections__heading::after{
   content: "";
@@ -288,6 +288,13 @@ overflow: hidden;
   position: absolute;
   top: 90%;
   background-color: var(--clr-grayLight);
+}
+.section__subHeading{
+  font-size: var(--fs-h3);
+  color: var(--clr-grayLight);
+  /* font-weight: var(--fw-bold); */
+  padding-top:1rem ;
+  letter-spacing: 1px;
 }
 .sections__span{
   
@@ -517,7 +524,7 @@ overflow: hidden;
   line-height: 25px;
 }
 .about__txt-top{
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 .span__about-bottom{
   display: flex;

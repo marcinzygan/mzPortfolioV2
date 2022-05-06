@@ -45,6 +45,7 @@ const allProjects = ProjectsData.map(data =>
 
         <Heading
         sectionHeading={"My Work"}
+        sectionSubHeading={"Projects that I am proud of ."}
         />
 
     <div className="project__background">
