@@ -3,7 +3,7 @@ import Slider from './Slider';
 
 export default function Modal(props){
     return(
-        <div className='modal modal__open'>
+        <div className={!props.isModalOpen ? "modal" : "modal modal__open"}>
             {props.modalContent.map((data)=> {
                 return(
     <div key={data.id} className="modal__container">

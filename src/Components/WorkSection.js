@@ -53,12 +53,13 @@ const allProjects = ProjectsData.map(data =>
         {allProjects}
 
         {/* Conditionaly renders modal if its true (open) */}
-        {isModalOpen &&
+        {/* {isModalOpen && */}
         <Modal
         modalContent={modalContent}
         onClick={modalToggle}
+        isModalOpen={isModalOpen}
         />
-        }
+        
         
     </div>
     

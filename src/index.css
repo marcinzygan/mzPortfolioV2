@@ -374,6 +374,7 @@ overflow: hidden;
 .project__container:hover:after {
   background-color: #8F00FF;
   border: none;
+  z-index: 1;
   
  }
  .project__container:hover > .project__overlay {
@@ -386,11 +387,12 @@ overflow: hidden;
   height: 18px;
   width: 18px;
   border-radius: 50%;
-  /* background-color: var(--clr-grayLight); */
+  /* background-color: var(--clr-black); */
   border: 1px solid var(--clr-grayLight);
   left: -1%;
   bottom: -6%;
   transition: 0.5s ease-in;
+  z-index: -1;
 }
 
 .modal{
@@ -405,7 +407,7 @@ overflow: hidden;
   
   pointer-events: none;
   opacity: 0;
-  transition: opacity 0.9s ease-in;
+  transition: opacity 1s ease-in-out;
 }
 .modal__open{
   visibility: visible;
@@ -413,6 +415,7 @@ overflow: hidden;
   z-index: 2000;
   opacity: 1;
   padding: 1rem;
+ 
 }
 
 .modal__title{
@@ -745,7 +748,7 @@ background-color: white;
     height: 300px;
   }
   .modal{
-    top: -7%;
+    top: -1.5%;
   }
   .modal__open{
     position: absolute;
@@ -838,7 +841,9 @@ background-color: white;
   /* .slider__img{
     height: 400px;
   } */
-
+.modal{
+  top: -2%;
+}
   .modal__open{
     padding: 4rem 6rem;
   }
@@ -910,7 +915,7 @@ grid-row: 3/4;
     left: 60%;
   }
   .modal{
-    top: 3%;
+    top: 7.5%;
   }
   .modal__container{
     display: grid;
