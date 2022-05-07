@@ -463,12 +463,16 @@ overflow: hidden;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  display: none;
 }
+
 .section__number{
-  font-size: 220px;
-  letter-spacing: 0.5rem;
+  font-size: 200px;
+  /* letter-spacing: 0.5rem; */
+  text-align: center;
   color: var(--clr-grayLight);
-  opacity: 0.15;
+  opacity: 0.13;
+ 
 }
 
 /* SLIDER IN MODAL  */
@@ -690,6 +694,7 @@ background-color: white;
   display: none;
   border: 1px solid var(--clr-grayLight);
   background-color: white;
+  
 }
 .email__message-visible{
   display: block;
@@ -703,6 +708,14 @@ background-color: white;
   font-weight: var(--fw-bold);
   text-align: center;
 }
+.span__alert-top{
+  padding-left: 1rem;
+}
+.span__alert-bottom{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 1rem ;
+}
 .email__alert-name{
   color: var(--clr-grayStrong);
   font-weight: var(--fw-regular);
@@ -713,6 +726,7 @@ padding: 2rem;
 line-height: 1.4;
 }
 .form__input{
+  padding: 0 0.2rem;
   min-height: 25px;
   resize: none;
   border: 1px solid var(--clr-grayLight);
@@ -729,12 +743,32 @@ line-height: 1.4;
   color: var(--clr-black);
   font-size: var(--fs-h3);
   font-weight: var(--fw-regular);
-  padding-top: 1rem;
+  padding: 1.25rem 0 0.5rem 0;
 }
-
-
-
-
+.details__container{
+  padding-top: 2rem;
+}
+.details__txt:nth-child(1){
+  padding-bottom: 1rem;
+}
+.details__txt{
+  padding-bottom: 0.3rem;
+}
+.socials__container{
+  padding-top: 2rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.contact__img{
+  padding: 2rem 0;
+}
+.social__icon{
+  transition: 0.25s ease-in;
+}
+.social__icon:hover{
+  color: var(--clr-accent);
+  transform: scale(1.1)
+}
 /* MEDIA QUERIES */
 @media (min-width: 360px){
   .project__img{
@@ -786,6 +820,9 @@ line-height: 1.4;
   section{
     padding: 0 4rem;
   }
+  .section__number-container{
+    display: flex;
+  }
   .nav{
     padding: 2rem 3rem;
   }
@@ -801,6 +838,7 @@ line-height: 1.4;
   .dot__nav{
     display: block;
   }
+  
   .block__container{
     padding-top:3rem ;
     height: 400px;
@@ -856,7 +894,8 @@ line-height: 1.4;
   }
  .nav__list{
    gap:3.5rem;
- }    
+ } 
+
 .hero__container{
   padding: 8.5rem 0 0 6rem;
   display: flex;

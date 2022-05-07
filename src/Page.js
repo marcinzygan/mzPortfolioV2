@@ -22,6 +22,7 @@ export default function App() {
 const [isHtmlIconClicked , setIsHtmlIconClicked] = React.useState(false)
 const [isReactIconClicked , setIsReactIconClicked] = React.useState(false) 
 const [isCssIconClicked ,setIsCssIconClicked] = React.useState(false)
+//Toggle functions for icons in About section
 function HtmlIconToggle(){
   setIsHtmlIconClicked(prevState => !prevState)  
 }
@@ -31,15 +32,23 @@ function ReactIconToggle(){
 function CssIconToggle(){
   setIsCssIconClicked(prevState=>!prevState)
 }
+
+//Set state for allIcons clicked in About section.
 const [isAllIconsClicked , setIsAllIconsClicked]= React.useState(false)
+
+// Check if icons are clicked if yes set the state of all icons to true .
 React.useEffect(()=>{
 if(isHtmlIconClicked && isCssIconClicked && isReactIconClicked === true){
   setIsAllIconsClicked(true)
-  console.log(isAllIconsClicked)
+  
 } else{
   setIsAllIconsClicked(false)
 }
 },[isReactIconClicked , isCssIconClicked , isHtmlIconClicked , isAllIconsClicked])
+
+
+
+
   return(
     <>
     <header>

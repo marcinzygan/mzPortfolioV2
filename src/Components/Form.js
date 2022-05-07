@@ -6,7 +6,7 @@ export default function Form(){
     const [emailSent, setEmailSent] = React.useState(false);
     const form = React.useRef();
     const [name, setName] = React.useState('')
-    console.log(name)
+   
     const sendEmail = (e) => {
       e.preventDefault();
   
@@ -36,18 +36,21 @@ export default function Form(){
         <input type="submit" value="Send" className="btn btn__form"/>
         <div className={!emailSent ? 'email__message' : "email__message email__message-visible"}>
       
+      
           <Icon 
             icon="ep:close-bold" 
             className='modal__icon email__alert-icon' 
             onClick={closeEmailAlert}
           />
-             <p className="email__alert-heading">Thank You for your message
+          <span className="span span__alert-top">{"<h2>"}</span>
+             <h2 className="email__alert-heading">Thank You for your message
              <span className="email__alert-name">
                 {" " + name.charAt(0).toUpperCase() + name.slice(1)}
               </span>
-              </p>  
+              </h2>  
+              <span className="span span__alert-bottom">{"</h2>"}</span>
             <p className="email__alert-message">
-              I will get back to you as soon as possible . <br></br>
+              I will get back to You as soon as possible . <br></br>
               Have a nice day !
               </p>
         </div>

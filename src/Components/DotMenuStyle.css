@@ -39,4 +39,5 @@ opacity: 1;
     color: var(--clr-grayLight);
     opacity: 0;
     transition: opacity 0.1s;
+    
 }
