@@ -1,10 +1,12 @@
 import React from "react";
+import { Icon } from "@iconify/react";
 import emailjs from '@emailjs/browser';
 
 export default function Form(){
     const [emailSent, setEmailSent] = React.useState(false);
     const form = React.useRef();
-
+    const [name, setName] = React.useState('')
+    console.log(name)
     const sendEmail = (e) => {
       e.preventDefault();
   
@@ -18,17 +20,37 @@ export default function Form(){
         form.current.reset()
         setEmailSent(true)
     };
-  
+
+  function closeEmailAlert(){
+    setEmailSent(prevState => !prevState)
+  }
+
     return (
-      <form ref={form} onSubmit={sendEmail}>
-        <label>Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
-        <span className={!emailSent ? 'email__message' : "email__message email__message-visible"}>Thank you for your message, we will be in touch in no time!</span>
+      <form ref={form} onSubmit={sendEmail} className="form__container">
+        <label className="form__label">Name</label>
+        <input type="text" name="user_name" className="form__input"value={name} onChange={e => setName(e.target.value)}/>
+        <label className="form__label">Email</label>
+        <input type="email" name="user_email" className="form__input"/>
+        <label className="form__label">Message</label>
+        <textarea name="message" className="form__input form__textarea"/>
+        <input type="submit" value="Send" className="btn btn__form"/>
+        <div className={!emailSent ? 'email__message' : "email__message email__message-visible"}>
+      
+          <Icon 
+            icon="ep:close-bold" 
+            className='modal__icon email__alert-icon' 
+            onClick={closeEmailAlert}
+          />
+             <p className="email__alert-heading">Thank You for your message
+             <span className="email__alert-name">
+                {" " + name.charAt(0).toUpperCase() + name.slice(1)}
+              </span>
+              </p>  
+            <p className="email__alert-message">
+              I will get back to you as soon as possible . <br></br>
+              Have a nice day !
+              </p>
+        </div>
       </form>
     );
     // const [name, setName] = React.useState('');

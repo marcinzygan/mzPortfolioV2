@@ -34,6 +34,7 @@ export default function AboutSection(props){
 
          {/* Animation  */}
          <div className="about__animation-container" >
+        
          <div className="about__animation">
         <Icon 
         icon="ci:file-html" 
@@ -52,11 +53,23 @@ export default function AboutSection(props){
         className={!props.isCssIconClicked ? "css__icon" : "css__icon css__icon-active"}
         onClick={props.CssIconToggle}
         />
-        <div className="inner__circle"></div>
-        <div className={!props.isAllIconsClicked ? "rectangle__about" : "rectangle__about rectangle__about-active"}></div>
+        <div className="inner__circle"><img  className="puppet"src="https://c.tenor.com/6On54eyPJNkAAAAC/run-forrest-puppet.gif" alt="puppet"></img></div>
+        <div className={!props.isAllIconsClicked ? "circle__about" : "circle__about circle__about-active"}></div>
         </div>
 
+       
+
         </div>
+
+        <div className="about__rectangle-container">
+         <div className="about__rectangle1">   
+         <div className={!props.isAllIconsClicked ? "about__overlay" : "about__overlay about__overlay-active"}></div>
+         </div>
+        <div className="about__rectangle2"> 
+        <div className={!props.isAllIconsClicked ? "about__overlay" : "about__overlay about__overlay-active"}></div>
+        </div>
+        </div>
+
         <div className="about__txt-bottom">
         <span className="span">{"<p>"}</span>
             <p className="about__txt ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras faucibus id id viverra enim turpis nulla. Consectetur id scelerisque lacus diam quam aliquam pharetra urna. Habitasse mi cursus id vitae. Eget aenean in vestibulum platea eget nulla dignissim pulvinar. Amet aliquam cras non tincidunt gravida enim est mattis. Facilisi blandit id et risus sit. Rhoncus iaculis elementum pretium nullam tortor arcu. Ultricies ut arcu.</p>
