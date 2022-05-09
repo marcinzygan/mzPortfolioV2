@@ -5,6 +5,7 @@ import Hero from "./Components/HeroSection";
 import AboutSection from "./Components/AboutSection";
 import WorkSection from "./Components/WorkSection";
 import ConstactSection from "./Components/ContactSection";
+import Footer from "./Components/Footer";
 
 
 
@@ -17,6 +18,10 @@ export default function App() {
     function toggleNavigation(){
          setNavOpen(prevState => !prevState)
      }
+//Set state for footer date 
+const year = new Date().getFullYear();
+const [currentYear ] = React.useState(year)
+
 
 //  Set state for icons in About section
 const [isHtmlIconClicked , setIsHtmlIconClicked] = React.useState(false)
@@ -70,6 +75,9 @@ if(isHtmlIconClicked && isCssIconClicked && isReactIconClicked === true){
     isAllIconsClicked={isAllIconsClicked}
     />
     <ConstactSection/>
+    <Footer
+    currentYear={currentYear}
+    />
     </>
   )
 }

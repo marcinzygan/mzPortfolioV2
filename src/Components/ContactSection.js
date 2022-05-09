@@ -13,7 +13,7 @@ export default function ConstactSection(){
         sectionSubHeading={"Feel free to contact me through any method listed below."}
         />
         
-
+<div className="contact__container">
     <div className="contact__container-right">      
         
       
@@ -49,7 +49,7 @@ export default function ConstactSection(){
 
 
     </div>
-
+</div>
         <div className="section__number-container">   
             <p className="section__number">03</p>
         </div>
