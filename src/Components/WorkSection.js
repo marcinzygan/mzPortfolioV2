@@ -36,8 +36,9 @@ const modalContentChange = (data) => {
         images={data.images}
         alt={data.name}
         projectName={data.name}
-        projectContent={data.content}
-        projectContent2={data.content2} 
+        // projectContent={data.content}
+        // projectContent2={data.content2}
+        // projectContent3={data.content3} 
         onClick={()=>modalContentChange(data)}  
     />
     )

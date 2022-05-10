@@ -16,7 +16,7 @@ export const ProjectsData = [
     {   
         id:2,
         name:"Project 2",
-        mainImage: require("../Images/project1.jpg"),
+        mainImage: require("../Images/hero2.jpg"),
         images:[
         "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
@@ -27,25 +27,43 @@ export const ProjectsData = [
     },
     {   
         id:3,
-        name:"Project 3",
-        mainImage: require("../Images/project1.jpg"),
+        name:"Graphic Design",
+        mainImage: require("../Images/Projects/Graphic Design/1.jpg"),
         images:[
-        "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-        "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-        "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+            require("../Images/Projects/Graphic Design/1.jpg"),
+            require("../Images/Projects/Graphic Design/2.jpg"),
+            require("../Images/Projects/Graphic Design/3.jpg"),
+            require("../Images/Projects/Graphic Design/4.jpg"),
+            require("../Images/Projects/Graphic Design/5.jpg"),
+         
+            
         
     ],
-        content:"lorem kukududud",
+        content:"I am aiming to create the best designs while keeping things simple.",
+        content2:"My beloved graphic design style is Minimalism.",
+        content3:"Most of my work that I've done is using the principles of minimalist graphic design.",
+        content4:"I am always trying to keep up too date with all the graphic design trends.",
+        content5:"You can find more of my graphic work on my Behance profile. ",
+        link1:{name : "Here" , link: "https://www.behance.net/marcin-zygan"},
     },
     {   
         id:4,
-        name:"Project 4",
+        name:"Github Projects",
         mainImage: require("../Images/project1.jpg"),
         images:[
         "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
         "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
         
     ],
-        content:"lorem kukududud5342523",
+        content:"Some of my projects that I've done while learning.",
+        content2:"Javascript & React projects :",
+        link1:{name : "Bankist App" , link: "https://github.com/marcinzygan/BankApp"},
+        link2:{name : "Github" , link: "https://www.behance.net/marcin-zygan"},
+        link3:{name : "Github" , link: "https://www.behance.net/marcin-zygan"},
+        link4:{name : "Github" , link: "https://www.behance.net/marcin-zygan"},
+        link5:{name : "Github" , link: "https://www.behance.net/marcin-zygan"},
+        
+    
+        
     },
 ]

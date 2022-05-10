@@ -5,9 +5,10 @@ export default function Modal(props){
     return(
         <div className={!props.isModalOpen ? "modal" : "modal modal__open"}>
             {props.modalContent.map((data)=> {
+                console.log(data.link1)
                 return(
     <div key={data.id} className="modal__container">
-            
+        
         <div className='modal__title-container'>
             <div className=' span__modal-buttonContainer'>
                     <span className="span">{"<h3>"}</span>
@@ -27,8 +28,24 @@ export default function Modal(props){
                 />
                 <div className='modal__content-container'>
                   <p className='modal__p modal__p-top'>{data.content}</p>
-                 <p className='modal__p'>{data.content2}</p>
+                 <p className='modal__p ' >{data.content2}</p>
+                 <p className='modal__p'>{data.content3}</p>
+                 <p className='modal__p'>{data.content4}</p>
+                 <p className='modal__p'>{data.content5}</p>
+
+                 {data.link1 &&
+                 <a href={data.link1.link} className="footer__nav-link modal__link">{data.link1.name}</a>}
+                 {data.link2 &&
+                 <a href={data.link2.link} className="footer__nav-link modal__link">{data.link2.name}</a>}
+                 {data.link3 &&
+                 <a href={data.link3.link} className="footer__nav-link modal__link">{data.link3.name}</a>}
+                 {data.link4 &&
+                 <a href={data.link4.link} className="footer__nav-link modal__link">{data.link4.name}</a>}
+                 {data.link5 &&
+                 <a href={data.link5.link} className="footer__nav-link modal__link">{data.link5.name}</a>}
                  </div>
+
+                 
     </div>
                 )
             })}
