@@ -40,10 +40,10 @@ export const ProjectsData = [
         
     ],
         content:"I am aiming to create the best designs while keeping things simple.",
-        content2:"My beloved graphic design style is Minimalism.",
-        content3:"Most of my work that I've done is using the principles of minimalist graphic design.",
+        content2:"My favorite graphic design style is Minimalism.",
+        content3:"Most of my work I've done using the principles of minimalist graphic design.",
         content4:"I am always trying to keep up too date with all the graphic design trends.",
-        content5:"You can find more of my graphic work on my Behance profile. ",
+        content5:"You can find more of my graphic designs on my Behance profile. ",
         link1:{name : "Here" , link: "https://www.behance.net/marcin-zygan"},
     },
     {   

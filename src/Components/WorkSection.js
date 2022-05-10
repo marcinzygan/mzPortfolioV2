@@ -4,7 +4,7 @@ import Heading from "./Heading"
 import Project from "./Project"
 import Modal from "./Modal"
 import Shapes from "../Images/about__shapes.svg"
-
+import { Link } from "react-scroll"
 
 
 
@@ -30,8 +30,9 @@ const modalContentChange = (data) => {
 //Map over the data array any create <Project> component for each item . 
 
     const allProjects = ProjectsData.map(data => 
-    <Project
-        key={data.id}
+    <Link  onClick={()=>modalContentChange(data)} to="modal"  spy={true} smooth={true} offset={-60} key={data.id}>   
+        <Project
+        // key={data.id}
         projectImg={data.mainImage}
         images={data.images}
         alt={data.name}
@@ -40,7 +41,8 @@ const modalContentChange = (data) => {
         // projectContent2={data.content2}
         // projectContent3={data.content3} 
         onClick={()=>modalContentChange(data)}  
-    />
+        />
+    </Link>
     )
 
 
@@ -59,11 +61,13 @@ return(
 
             {/* Conditionaly renders modal if its true (open) */}
             {/* {isModalOpen && */}
+            
             <Modal
             modalContent={modalContent}
             onClick={modalToggle}
             isModalOpen={isModalOpen}
             />
+
         </div>
 
         <div className="about__shapes-container">
