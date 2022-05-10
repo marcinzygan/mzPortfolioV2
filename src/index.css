@@ -1061,6 +1061,9 @@ line-height: 1.4;
   section{
     padding: 0 6rem;
   }
+  .nav{
+    padding: 3rem;
+  }
  .nav__list{
    gap:3.5rem;
  } 

@@ -12,7 +12,7 @@ export default function DotMenu(){
        
         <nav className="dot__nav">
             <div className="dot__item">
-                <Link to="home" activeClass="dot__link-selected" spy={true} smooth={true} offset={-100} className="dot__link"> </Link>
+                <Link to="home" activeClass="dot__link-selected" spy={true} smooth={true} offset={-130} className="dot__link"> </Link>
                 <span className="dot__label">Home</span>
             </div>
 
