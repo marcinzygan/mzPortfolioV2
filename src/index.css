@@ -311,6 +311,10 @@ overflow: hidden;
   background: url(../src/Images/myWork.svg);
   background-repeat: repeat-x;
 }
+.work__shapes-img{
+  max-height: 800px;
+  max-width: 800px;
+}
 .project__background{
   margin-top: 4rem;
   display: flex;
@@ -977,6 +981,11 @@ line-height: 1.4;
   .line{
     width:580px;
     left: -50%;
+  }
+  .work__container{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   }
   .project__img{
     height: 80px;
