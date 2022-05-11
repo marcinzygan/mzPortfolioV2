@@ -1015,9 +1015,9 @@ line-height: 1.4;
   .section__number{
     font-size: 350px;
   }
-  .slider__img{
+  /* .slider__img{
     height: 200px;
-  }
+  } */
   .modal{
     top: -1.5%;
   }
@@ -1294,8 +1294,9 @@ grid-row: 3/4;
   }
   .modal__container{
     display: grid;
-    grid-template-columns: repeat(3 , 1fr);
-    grid-template-rows: repeat(3 , 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /* grid-template-rows: repeat(3 , 1fr); */
+    grid-template-rows:  repeat(auto-fit, minmax(200px, 1fr));
   }
   .modal__content-container{
    
