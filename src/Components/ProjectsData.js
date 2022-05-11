@@ -9,19 +9,26 @@ export const ProjectsData = [
         "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
         
     ],
-        content:"Shipmodels is a commercial project for a company that specializes in building quality and detailed models of ships .",
+        content:"Shipmodels is a company that specializes in building quality and detailed models of ships .",
         content2:"The current company website had to be re-designed and built from scratch . Website has to be mobile friendly end SEO optimized. This project was done together with my brother Grzegorz Zygan .",
-        content3:"I was doing Frontend development and Graphic Design , and the whole Backend was done by Grzegorz Zygan." ,
+        content3:"I was doing Frontend development and Graphic Design . The whole Backend was done by Grzegorz Zygan." ,
         content4:"Features implemented :",
-        content5:"Website designed in Figma with desktop and mobile screens. Website built in Html. CSS styling.Mobile and desktop responsive via CSS Media queries JavaScript functionality : - mobile navbar (hamburger menu) - modals - image slider - back to home arrow button - dynamic date set in footer",
         list:{
-            item1: "1",
-            item2: "2", 
-            item3: "3",
-            item4: "4",
-            item5: "5",
-            item6: "6",           
-        }
+            item1: "Figma design for desktop and mobile screens",
+            item2: "Website built in Html", 
+            item3: "CSS styling",
+            item4: "Mobile and desktop responsive via CSS Media queries",
+            item5: "Mobile navbar (hamburger menu) JS",
+            item6: "Modal JS",  
+            item7: "Image Slider JS", 
+            item8: "Back to home button JS", 
+            item9: "Dynamic date set in footer JS",          
+        },
+        
+        links:[
+            {name:"GitHub Case Study" , link:"https://github.com/sbtah/shipmodels-django-site"},
+            
+        ]
     },
 
     {   
@@ -55,7 +62,10 @@ export const ProjectsData = [
         content3:"Most of my work I've done using the principles of minimalist graphic design.",
         content4:"I am always trying to keep up too date with all the graphic design trends.",
         content5:"You can find more of my graphic designs on my Behance profile. ",
-        // link1:{name : "Here" , link: "https://www.behance.net/marcin-zygan"},
+        links:[
+            {name:"Here" , link:"https://www.behance.net/marcin-zygan"}
+        ]
+        
     },
     {   
         id:4,
@@ -68,7 +78,10 @@ export const ProjectsData = [
     ],
         content:"Some of my projects that I've done while learning.",
         content2:"Javascript & React projects :",
-        links:[{name:"1",link:"2"},{name:"bb" , link:"cc"}]
+        links:[
+            {name:"Bankist App" ,link: "https://github.com/marcinzygan/BankApp"},
+            {name:"Github" , link:"https://github.com/marcinzygan"},
+        ]
             
         // link1:{name : "Bankist App" , link: "https://github.com/marcinzygan/BankApp"},
         // link2:{name : "Github" , link: "https://www.behance.net/marcin-zygan"},

@@ -43,24 +43,12 @@ export default function Modal(props){
             {/* IF THERE IS DATA.LINK IN OBJECT , MAP OVER OBJECT DATA.LIST ARRAY AND FOR EACH ITEM MAKE <a> */}
                 {   data.links && 
                     data.links.map((item , i ) => (
-                    <a href={item.link} className="footer__nav-link modal__link" key={i}>
+                    <a href={item.link} className="modal__link" key={i}>
                         {item.name}
                     </a>
                 ))}
                     
                    
-                    
-                
-                 {/* {data.link1 &&
-                 <a href={data.link1.link} className="footer__nav-link modal__link">{data.link1.name}</a>}
-                 {data.link2 &&
-                 <a href={data.link2.link} className="footer__nav-link modal__link">{data.link2.name}</a>}
-                 {data.link3 &&
-                 <a href={data.link3.link} className="footer__nav-link modal__link">{data.link3.name}</a>}
-                 {data.link4 &&
-                 <a href={data.link4.link} className="footer__nav-link modal__link">{data.link4.name}</a>}
-                 {data.link5 &&
-                 <a href={data.link5.link} className="footer__nav-link modal__link">{data.link5.name}</a>} */}
 
             </div>
 
