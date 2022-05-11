@@ -28,14 +28,20 @@ export default function AboutSection(props){
 
             <span className="span">{"<p>"}</span>
             <p className="about__txt ">
-            My name is Marcin Zygan
-            and I am a passionate graphic designer and web developer with lots of innovative ideas and unique approach to visuals.
+            Hello my name is Marcin Zygan and I am Front-end Developer and Graphic Designer.
             <br></br>
             <br></br>
-            I have a solid understanding of design principles but also marketing and advertising techniques.
-            <br></br>
-            <br></br>
-            In my work I am always keeping attention to details and I have a great passion to keep clients satisfied with every project.
+            I created my first website in 2001 . <br></br>
+            It was a website for Diablo 2 gaming community.<br></br>
+            Althoug I didn't pursue a web developer career for many years.<br></br>
+            I became a professional Chef instead .<br></br>
+            I was still following how web design is evolving during these many years .<br></br><br></br>
+            In late 2021 I have decided that I want to become Front-end Developer.
+            I started learning from basics Html , Css , and JavaScript , and in early 2022
+            I started a part-time career as a freelance Web Developer and Graphic Designer.<br></br><br></br>
+            I am highly motivated to switch from Chef to Front-end Developer full time ,
+            and Hopefully I will find my dream job so I can progress quicker .<br></br><br></br>
+            Currently I am learning React; in fact this website is fully powered by React.
             </p>
             <span className="span span__about-bottom">{"</p>"}</span><br></br><br></br>
         </div>
@@ -54,7 +60,7 @@ export default function AboutSection(props){
             className={!props.isReactIconClicked ? "react__icon" : "react__icon react__icon-active"}
             onClick={props.ReactIconToggle}
             />
-            `<Icon 
+            <Icon 
             icon="ci:file-css" 
             className={!props.isCssIconClicked ? "css__icon" : "css__icon css__icon-active"}
             onClick={props.CssIconToggle}
@@ -80,12 +86,11 @@ export default function AboutSection(props){
 
         <div className="about__txt-bottom">
             <span className="span">{"<p>"}</span>
-                <p className="about__txt ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                 Cras faucibus id id viverra enim turpis nulla. 
-                 Consectetur id scelerisque lacus diam quam aliquam pharetra urna. 
-                 Habitasse mi cursus id vitae. Eget aenean in vestibulum platea eget nulla dignissim pulvinar.
-                  Amet aliquam cras non tincidunt gravida enim est mattis. Facilisi blandit id et risus sit. 
-                  Rhoncus iaculis elementum pretium nullam tortor arcu. Ultricies ut arcu.</p>
+                <p className="about__txt ">
+                In my free time when it is windy enough , I am usually going for an amazing kiteboarding session .<br></br><br></br>
+                And when there is no wind, I have a backup plan. Standup paddle boarding .<br></br><br></br>
+                I also love running and to this day I have completed 1 Marathon and 21 Half Marathons .<br></br>
+                </p>
             <span className="span span__about-bottom">{"</p>"}</span>
         </div>
        

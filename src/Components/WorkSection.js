@@ -30,7 +30,7 @@ const modalContentChange = (data) => {
 //Map over the data array any create <Project> component for each item . 
 
     const allProjects = ProjectsData.map(data => 
-    <Link  onClick={()=>modalContentChange(data)} to="modal"  spy={true} smooth={true} offset={-60} key={data.id}>   
+    <Link  onClick={()=>modalContentChange(data)} to="work"   smooth={true} offset={-15} key={data.id}>   
         <Project
         // key={data.id}
         projectImg={data.mainImage}

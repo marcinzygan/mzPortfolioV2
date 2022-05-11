@@ -309,6 +309,7 @@ overflow: hidden;
 .work__section{
   position: relative;
   background: url(../src/Images/myWork.svg);
+  background-position: right;
   background-repeat: repeat-x;
 }
 .work__shapes-img{
@@ -320,18 +321,19 @@ overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  background: url(../src/Images/myWork.svg);
+  /* background: url(../src/Images/myWork.svg);
   background-repeat: no-repeat;
   background-size:contain;
-  background-position: right;
+  background-position: right; */
 }
 .project__container{
   display: flex;
   align-items: center;
   gap : 2rem;
+  flex: 1 auto;
   position: relative;
   
-  width: fit-content;
+  /* width: fit-content; */
   /* margin-bottom: 2rem; */
   /* height: 45px;
   width: 195px; */
@@ -800,7 +802,7 @@ line-height: 1.4;
     background-image: url(../src/Images/footer.svg);
     background-repeat: no-repeat;
     /* background-size: cover; */
-    padding: 6rem 0 0rem 0rem;
+    padding: 5rem 0 0rem 0rem;
     background-position: top;
     
 }
@@ -1157,6 +1159,7 @@ line-height: 1.4;
 }  
 .project__overlay{
   display: block;
+  width: 100px;
 }
   .project__img{
     height: 100px;
@@ -1179,6 +1182,7 @@ line-height: 1.4;
   .about__txt-top{
     grid-column: 1/2;
     grid-row: 1/2;
+    margin: 0;
   }
   .about__txt-bottom{
 grid-column: 1/2;
