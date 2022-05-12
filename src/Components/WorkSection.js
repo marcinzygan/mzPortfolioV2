@@ -5,6 +5,7 @@ import Project from "./Project"
 import Modal from "./Modal"
 import Shapes from "../Images/about__shapes.svg"
 import { Link } from "react-scroll"
+import {motion} from "framer-motion"
 
 
 
@@ -69,10 +70,22 @@ return(
             />
 
         </div>
-
-        <div className="about__shapes-container" ref={props.workSectionShapesRef}>
+        
+        <motion.div 
+        className="about__shapes-container" 
+        ref={props.workSectionShapesRef}
+        initial={"hidden"}
+        whileInView={"visible"}
+        viewport={{ once: true }}
+        transition={{ duration: 0.7 , delay: 0.2}}
+        variants={{
+          visible: { opacity: 1, x:0 },
+          hidden: { opacity: 0, x:-200 }
+        }}
+        
+        >
             <img src={Shapes} alt="geometric shapes" className="work__shapes-img"></img>
-        </div>
+        </motion.div>
     </div>
 
     <div className="section__number-container">

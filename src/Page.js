@@ -53,20 +53,7 @@ if(isHtmlIconClicked && isCssIconClicked && isReactIconClicked === true){
 }
 },[isReactIconClicked , isCssIconClicked , isHtmlIconClicked , isAllIconsClicked])
 
-//INTERSECTION OBSERVER
 
-const workSectionShapesRef = React.useRef()
-//Set state for workSectionShapes if they intersecting .
-const [workSectionShapesIntersecting , setWorkSectionShapesIntersecting] = React.useState();
-console.log(workSectionShapesIntersecting);
-
-React.useEffect(()=>{
-const observer = new IntersectionObserver((entries)=>{
-  const entry = entries[0]
-  setWorkSectionShapesIntersecting(entry.isIntersecting)
-})
-observer.observe(workSectionShapesRef.current)
-},[])
 
 
 
@@ -83,7 +70,8 @@ observer.observe(workSectionShapesRef.current)
     <DotMenu/>
     <Hero/>
     <WorkSection
-    workSectionShapesRef={workSectionShapesRef}
+    // workSectionShapesRef={ref}
+    // workSectionShapesIntersecting={isIntersecting}
     />
     <AboutSection
     HtmlIconToggle={HtmlIconToggle}
