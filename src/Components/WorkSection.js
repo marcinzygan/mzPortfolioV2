@@ -8,7 +8,7 @@ import { Link } from "react-scroll"
 
 
 
-export default function WorkSection(){
+export default function WorkSection(props){
 
 
 // Set the state for the dynamic change of the content inside modal 
@@ -70,7 +70,7 @@ return(
 
         </div>
 
-        <div className="about__shapes-container">
+        <div className="about__shapes-container" ref={props.workSectionShapesRef}>
             <img src={Shapes} alt="geometric shapes" className="work__shapes-img"></img>
         </div>
     </div>

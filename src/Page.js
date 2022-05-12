@@ -11,6 +11,8 @@ import Footer from "./Components/Footer";
 
 
 export default function App() {
+
+
   
  //Set state for opening the navigation
  const [navOpen , setNavOpen] = React.useState(false)
@@ -51,6 +53,22 @@ if(isHtmlIconClicked && isCssIconClicked && isReactIconClicked === true){
 }
 },[isReactIconClicked , isCssIconClicked , isHtmlIconClicked , isAllIconsClicked])
 
+//INTERSECTION OBSERVER
+
+const workSectionShapesRef = React.useRef()
+//Set state for workSectionShapes if they intersecting .
+const [workSectionShapesIntersecting , setWorkSectionShapesIntersecting] = React.useState();
+console.log(workSectionShapesIntersecting);
+
+React.useEffect(()=>{
+const observer = new IntersectionObserver((entries)=>{
+  const entry = entries[0]
+  setWorkSectionShapesIntersecting(entry.isIntersecting)
+})
+observer.observe(workSectionShapesRef.current)
+},[])
+
+
 
 
 
@@ -64,7 +82,9 @@ if(isHtmlIconClicked && isCssIconClicked && isReactIconClicked === true){
     </header>
     <DotMenu/>
     <Hero/>
-    <WorkSection/>
+    <WorkSection
+    workSectionShapesRef={workSectionShapesRef}
+    />
     <AboutSection
     HtmlIconToggle={HtmlIconToggle}
     ReactIconToggle={ReactIconToggle}
