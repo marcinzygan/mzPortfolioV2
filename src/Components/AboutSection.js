@@ -1,6 +1,7 @@
 import Heading from "./Heading"
 import AboutImg from "../Images/marcin.jpg"
 import { Icon } from "@iconify/react"
+import { motion } from "framer-motion"
 
 
 
@@ -22,9 +23,30 @@ export default function AboutSection(props){
     <div className="about__container">
 
     
-        <img src={AboutImg} alt="marcin zygan" className="about__img"></img>
+        <motion.img 
+        src={AboutImg} 
+        alt="marcin zygan" 
+        className="about__img"
+        initial={"hidden"}
+        whileInView={"visible"}
+        viewport={{ once: true }}
+        variants={{
+          visible: { opacity: 1, y:0 , transition:{ duration: 2 , delay: 0.5}},
+          hidden: { opacity: 0, y:-100 }
+        }}
+        >
+        </motion.img>
 
-        <div className="about__txt-top">
+        <motion.div 
+        className="about__txt-top"
+        initial={"hidden"}
+        whileInView={"visible"}
+        viewport={{ once: true }}
+        variants={{
+          visible: { opacity: 1, y:0 , transition:{ duration: 1 , delay: 0.5}},
+          hidden: { opacity: 0, y:-100 }
+        }}
+        >
 
             <span className="span">{"<p>"}</span>
             <p className="about__txt ">
@@ -44,7 +66,7 @@ export default function AboutSection(props){
             Currently I am learning React; in fact this website is fully powered by React.
             </p>
             <span className="span span__about-bottom">{"</p>"}</span><br></br><br></br>
-        </div>
+        </motion.div>
 
          {/* Animation  */}
         <div className="about__animation-container" >
@@ -84,7 +106,16 @@ export default function AboutSection(props){
             </div>
         </div>
 
-        <div className="about__txt-bottom">
+        <motion.div 
+        className="about__txt-bottom"
+        initial={"hidden"}
+        whileInView={"visible"}
+        viewport={{ once: true }}
+        variants={{
+          visible: { opacity: 1, y:0 , transition:{ duration: 1 , delay: 0.5}},
+          hidden: { opacity: 0, y:-100 }
+        }}
+        >
             <span className="span">{"<p>"}</span>
                 <p className="about__txt ">
                 In my free time when it is windy enough , I am usually going for an amazing kiteboarding session .<br></br><br></br>
@@ -92,7 +123,7 @@ export default function AboutSection(props){
                 I also love running and to this day I have completed 1 Marathon and 21 Half Marathons .<br></br>
                 </p>
             <span className="span span__about-bottom">{"</p>"}</span>
-        </div>
+        </motion.div>
        
     </div>
          <div className="section__number-container">

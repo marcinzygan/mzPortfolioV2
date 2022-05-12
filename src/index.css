@@ -4,8 +4,11 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  
+  
 }
 :root{
+  
   --fs-h1: 2.25rem;
   --fs-h2: 0.75rem;
   --fs-h3: 0.75rem;
@@ -665,7 +668,7 @@ padding-top: 1rem;
 }
 .css__icon{
   position: absolute;
-  bottom:-10%;
+  bottom:-8%;
   left: 50%;
   transform: translate(-50% , 0%);
   color: var(--clr-grayLight);
@@ -1215,7 +1218,8 @@ line-height: 1.4;
   .about__container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    /* gap: 4rem; */
   }
   .about__txt-top{
     grid-column: 1/2;
@@ -1223,15 +1227,15 @@ line-height: 1.4;
     margin: 0;
   }
   .about__txt-bottom{
-grid-column: 1/2;
-grid-row: 3/4;
+grid-column: 3/4;
+grid-row: 2/3;
   }
   .about__img{
     grid-column: 3/4;
     grid-row: 1/2;
   }
   .about__animation-container{
-    grid-column: 2/4;
+    grid-column: 2/3;
     grid-row: 2/3;
   }
   .about__overlay{
@@ -1242,7 +1246,7 @@ grid-row: 3/4;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     margin-right: auto;
     grid-column: 1/2;
     grid-row: 2/3;
@@ -1253,29 +1257,29 @@ grid-row: 3/4;
     height: 100px;
   }
   .about__animation{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
   }
   .about__animation::after{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     background-size: cover;
   }
   .circle__about{
-    width: 390px;
-    height: 390px;
+    width: 290px;
+    height: 290px;
   }
   .html__icon{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
   }
   .css__icon{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
   }
   .react__icon{
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
   }
   .about__txt{
     line-height: 30px;

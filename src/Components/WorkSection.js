@@ -56,7 +56,21 @@ return(
         />
     <div className="work__container">
 
-        <div className="project__background">
+        <motion.div 
+        className="project__background"
+        initial={"hidden"}
+        whileInView={"visible"}
+        viewport={{ once: true }}
+        variants={{
+          visible: { opacity: 1, x:0 ,  transition: {
+            // type: "tween",
+            staggerChildren: 0.5,
+            duration: 2,
+            delay:0.5,
+          }},
+          hidden: { opacity: 0, x: 10 }
+        }}
+        >
             {/* Displays all data mapped as a project component */}
             {allProjects}
 
@@ -69,18 +83,16 @@ return(
             isModalOpen={isModalOpen}
             />
 
-        </div>
+        </motion.div>
         
         <motion.div 
         className="about__shapes-container" 
-        ref={props.workSectionShapesRef}
         initial={"hidden"}
         whileInView={"visible"}
         viewport={{ once: true }}
-        transition={{ duration: 0.7 , delay: 0.2}}
         variants={{
-          visible: { opacity: 1, x:0 },
-          hidden: { opacity: 0, x:-200 }
+          visible: { opacity: 1, x:0 , transition:{ duration: 2 , delay: 0.5}},
+          hidden: { opacity: 0, x:-10 }
         }}
         
         >

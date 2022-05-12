@@ -3,7 +3,7 @@ import logo from "../Images/logo.svg"
 import React from 'react';
 import {Link} from "react-scroll"
 
-
+import {motion} from "framer-motion"
 
 export default function Navbar(props){
  
@@ -19,9 +19,16 @@ export default function Navbar(props){
             <img src={logo} alt="marcin zygan logo" ></img>
         </Link>
      
-        <button onClick={props.onClick} className="nav__button" aria-label="toggle navigation">
+        <motion.button 
+        onClick={props.onClick} 
+        className="nav__button" 
+        aria-label="toggle navigation"
+        initial={{x:400 ,opacity:0}}
+         animate={{x:0 , opacity:1}}
+         transition={{duration:2 ,delay:3}}
+        >
             <Icon icon="ri:menu-4-line" /> 
-        </button>
+        </motion.button>
 
             <ul className={!props.navOpen ?  "nav__list" : "nav__open nav__list"}>
                 <li className="nav__li" ><Link  onClick={props.onClick} to="home" className='nav__link' spy={true} smooth={true} offset={-130}>Home</Link></li>
