@@ -20,9 +20,9 @@ export default function Hero(){
                     <span className="span span__dark">{"</h1>"}</span>
                 </motion.h1>
                 
-        <motion.h2 
-        className="hero__h2"
-        initial={{y:400 ,opacity:0}}
+            <motion.h2 
+                className="hero__h2"
+                initial={{y:400 ,opacity:0}}
                 animate={{y:0 , opacity:1}}
                 transition={{duration:2 ,delay:1.2}}
         >

@@ -3,11 +3,16 @@ import Hero1 from "../Images/hero1.jpg"
 import Hero2 from "../Images/hero2.jpg"
 import Hero3 from "../Images/hero3.jpg"
 import Triangle from "../Images/triangle.svg"
-
+import { motion } from "framer-motion"
 
 export default function HeroAnimation(){
     return(
-        <div className="block__container">
+        <motion.div 
+            className="block__container"
+            initial={{y:-150 ,opacity:0}}
+            animate={{y:0 , opacity:1}}
+            transition={{duration:2 ,delay:0.2}}
+        >
         <div className="circle__container">
             <img src={Circle} alt="black and white cirlce" className="circle__img"></img>
             <img src={Hero1} className="hero__img" alt="man looking into black window"></img>
@@ -18,6 +23,6 @@ export default function HeroAnimation(){
             
         </div>
         
-        </div>
+        </motion.div>
     )
 } 
