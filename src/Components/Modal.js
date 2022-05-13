@@ -58,7 +58,7 @@ export default function Modal(props){
                 ))}
                     
                     
-                    <a className='modal__back-btn' onClick={props.onClick}><Icon icon="ep:arrow-left-bold" className='modal__icon' /></a>
+                    <div className='modal__back-btn' onClick={props.onClick}><Icon icon="ep:arrow-left-bold" className='modal__icon' /></div>
             </div>
             
             </div>
