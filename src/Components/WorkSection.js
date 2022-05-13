@@ -38,7 +38,7 @@ const modalContentChange = (data) => {
         whileInView={"visible"}
         viewport={{ once: true }}
         variants={{
-        visible: { opacity: 1, x:0 ,  transition: { duration: 2, delay: index*0.2, }},
+        visible: { opacity: 1, x:0 ,  transition: { duration: 1.5, delay: index*0.2, }},
         hidden: { opacity: 0, x: 10 }
         }}
     >
