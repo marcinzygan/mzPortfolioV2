@@ -22,7 +22,12 @@ export const ProjectsData = [
             item6: "Modal JS",  
             item7: "Image Slider JS", 
             item8: "Back to home button JS", 
-            item9: "Dynamic date set in footer JS",          
+            item9: "Dynamic date set in footer JS",   
+            item10: "Dynamic date set in footer JS",            
+            item11: "Dynamic date set in footer JS",     
+            item12: "Dynamic date set in footer JS",     
+            item13: "Dynamic date set in footer JS",     
+
         },
         
         links:[

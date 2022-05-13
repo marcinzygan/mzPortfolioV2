@@ -30,8 +30,19 @@ const modalContentChange = (data) => {
 
 //Map over the data array any create <Project> component for each item . 
 
-    const allProjects = ProjectsData.map(data => 
-    <Link  onClick={()=>modalContentChange(data)} to="work"   smooth={true} offset={-15} key={data.id}>   
+    const allProjects = ProjectsData.map((data, index)  => 
+    
+    <motion.div
+        key={data.id}
+        initial={"hidden"}
+        whileInView={"visible"}
+        viewport={{ once: true }}
+        variants={{
+        visible: { opacity: 1, x:0 ,  transition: { duration: 2, delay: index*0.2, }},
+        hidden: { opacity: 0, x: 10 }
+        }}
+    >
+    <Link  onClick={()=>modalContentChange(data)} to="work"   smooth={true} offset={-15} >   
         <Project
         // key={data.id}
         projectImg={data.mainImage}
@@ -44,6 +55,7 @@ const modalContentChange = (data) => {
         onClick={()=>modalContentChange(data)}  
         />
     </Link>
+    </motion.div>
     )
 
 
@@ -56,21 +68,7 @@ return(
         />
     <div className="work__container">
 
-        <motion.div 
-        className="project__background"
-        initial={"hidden"}
-        whileInView={"visible"}
-        viewport={{ once: true }}
-        variants={{
-          visible: { opacity: 1, x:0 ,  transition: {
-            // type: "tween",
-            staggerChildren: 0.5,
-            duration: 2,
-            delay:0.5,
-          }},
-          hidden: { opacity: 0, x: 10 }
-        }}
-        >
+        <div className="project__background">
             {/* Displays all data mapped as a project component */}
             {allProjects}
 
@@ -83,7 +81,7 @@ return(
             isModalOpen={isModalOpen}
             />
 
-        </motion.div>
+        </div>
         
         <motion.div 
         className="about__shapes-container" 
@@ -91,8 +89,8 @@ return(
         whileInView={"visible"}
         viewport={{ once: true }}
         variants={{
-          visible: { opacity: 1, x:0 , transition:{ duration: 2 , delay: 0.5}},
-          hidden: { opacity: 0, x:-10 }
+        visible: { opacity: 1, x:0 , transition:{ duration: 3 , delay: 0.2}},
+        hidden: { opacity: 0, x:-10 }
         }}
         
         >

@@ -3,8 +3,16 @@ import Slider from './Slider';
 
 export default function Modal(props){
     return(
-        <div className={!props.isModalOpen ? "modal" : "modal modal__open" } id="modal">
+        <div className={!props.isModalOpen ? "modal" : "modal modal__open " } id="modal">
             {props.modalContent.map((data)=> {
+
+                // Check if modal is open if yes add hidden class to body to stop background scrolling .
+                if(props.isModalOpen === true ){
+                    document.body.classList.add("hidden")
+                }
+                else{
+                    document.body.classList.remove("hidden") 
+                }
                 
                 return(
     <div key={data.id} className="modal__container" >
@@ -26,6 +34,7 @@ export default function Modal(props){
                 images={data.images}
                 name={data.name}
                 />
+            <div className='modal__content-wrapper'>
             <div className='modal__content-container'>
                  <p className='modal__p modal__p-top'>{data.content}</p>
                  <p className='modal__p ' >{data.content2}</p>
@@ -48,15 +57,17 @@ export default function Modal(props){
                     </a>
                 ))}
                     
-                   
-
+                    
+                    <a className='modal__back-btn' onClick={props.onClick}>Back</a>
             </div>
-
-                 
+            
+            </div>
+            
     </div>
                 )
             })}
-        </div>
+            
+    </div>
 
 
   
