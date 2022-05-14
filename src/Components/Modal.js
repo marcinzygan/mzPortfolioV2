@@ -49,7 +49,7 @@ export default function Modal(props){
                     { data.list[item] }
                     </li>
                     ))}  
-            {/* IF THERE IS DATA.LINK IN OBJECT , MAP OVER OBJECT DATA.LIST ARRAY AND FOR EACH ITEM MAKE <a> */}
+            {/* IF THERE IS DATA.LINK , MAP OVER  DATA.LIST ARRAY AND FOR EACH ITEM MAKE <a> */}
                 {   data.links && 
                     data.links.map((item , i ) => (
                     <a href={item.link} className="modal__link" key={i}>

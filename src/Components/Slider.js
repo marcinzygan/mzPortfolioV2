@@ -1,6 +1,6 @@
 import React from "react"
 import { Icon } from '@iconify/react';
-
+import { motion } from "framer-motion";
 
 
 
@@ -16,15 +16,28 @@ export default function Slider(props){
         return(
         <div className={index === currentSlide ? "slide__active" : "slide"} key={index}>
             
-           {index ===  currentSlide &&  <img src={image} className="slider__img" alt={props.name +1} ></img>} 
+           {index ===  currentSlide &&  
+           <motion.img 
+           src={image} 
+           className="slider__img" 
+           alt={props.name +1} 
+           initial={"hidden"}
+           whileInView={"visible"}
+           viewport={{ once: true }}
+           variants={{
+              visible: { opacity: 1, y:0 , transition:{ duration: 0.5 , delay: 0.1}},
+              hidden: { opacity: 0, y:10 }
+            }}
+           >
+           </motion.img>} 
        
         </div>
         )
     })
 
-    // if(!Array.isArray(props.images) || sliderLength <=0){
-    //     return null
-    // }
+    if(!Array.isArray(props.images) || sliderLength <=0){
+        return null
+    }
 
     // Function for next image , if current image is equal to array lenght then back to slide 0 if not go to next slide 
     const nextSlide = () => {
