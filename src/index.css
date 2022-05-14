@@ -85,7 +85,7 @@ section {
   font-weight: var(--fw-bold);
   color: var(--clr-grayStrong);
   font-size: var(--fs-nav);
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
 }
 .nav__link:hover {
   border: 1px solid var(--clr-grayLight);

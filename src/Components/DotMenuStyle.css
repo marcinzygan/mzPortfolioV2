@@ -1,43 +1,44 @@
-:root{
-    --nav-gap:1rem
+:root {
+  --nav-gap: 1rem;
 }
 
-.dot__nav{
-    padding: 1rem;
-    position:fixed ;
-    left: 0;
-    top: 30%;  
-    transform: translateY(-30%);
-    z-index: 100;
-    
+.dot__nav {
+  padding: 1rem;
+  position: fixed;
+  left: 0;
+  top: 30%;
+  transform: translateY(-30%);
+  z-index: 100;
 }
-.dot__item{
-    display: flex;
-    align-items: center;
-    padding-bottom: var(--nav-gap);
+.dot__item {
+  display: flex;
+  align-items: center;
+  padding-bottom: var(--nav-gap);
 }
-.dot__link{
-    cursor: pointer;
-    border: 1px solid var(--clr-grayLight);
-    border-radius: 50%;
-    height: 15px;
-    width: 15px;
-    margin-right: 0.5rem;
-    transition: transform 0.2s;
-    opacity: 0.9;
+.dot__link {
+  cursor: pointer;
+  border: 1px solid var(--clr-grayLight);
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  margin-right: 0.5rem;
+  transition: transform 0.5s ease-in;
+  opacity: 0.9;
 }
 .dot__link-selected {
-    background-color: var(--clr-accent);
-    border: 1px solid var(--clr-accent);
-    transform: scale(1.2);
+  background-color: var(--clr-accent);
+  border: 1px solid var(--clr-accent);
+  transform: scale(1.2);
+}
+.dot__link:hover {
+  transform: scale(1.2);
 }
 .dot__link:hover ~ .dot__label {
-opacity: 1;
+  opacity: 1;
 }
-.dot__label{
-    font-weight: var(--fw-regular);
-    color: var(--clr-grayLight);
-    opacity: 0;
-    transition: opacity 0.1s;
-    
+.dot__label {
+  font-weight: var(--fw-regular);
+  color: var(--clr-grayLight);
+  opacity: 0;
+  transition: opacity 0.1s;
 }
