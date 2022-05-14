@@ -45,8 +45,8 @@ export default function AboutSection(props) {
         >
           <span className="span">{"<p>"}</span>
           <p className="about__txt ">
-            Hello my name is Marcin Zygan and I am Front-end Developer and
-            Graphic Designer.
+            <span className="about__span-title">Hello World ...</span> My name
+            is Marcin Zygan and I am Front-end Developer and Graphic Designer.
             <br></br>
             <br></br>I created my first website in 2001 . <br></br>
             It was a website for Diablo 2 gaming community.<br></br>
@@ -121,7 +121,20 @@ export default function AboutSection(props) {
         </div>
 
         <div className="about__rectangle-container">
-          <div className="about__rectangle1">
+          <motion.div
+            className="about__rectangle1"
+            initial={"hidden"}
+            whileInView={"visible"}
+            viewport={{ once: true }}
+            variants={{
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 2, delay: 0.5 },
+              },
+              hidden: { opacity: 0, y: -100 },
+            }}
+          >
             <div
               className={
                 !props.isAllIconsClicked
@@ -129,8 +142,21 @@ export default function AboutSection(props) {
                   : "about__overlay about__overlay-active"
               }
             ></div>
-          </div>
-          <div className="about__rectangle2">
+          </motion.div>
+          <motion.div
+            className="about__rectangle2"
+            initial={"hidden"}
+            whileInView={"visible"}
+            viewport={{ once: true }}
+            variants={{
+              visible: {
+                opacity: 1,
+                y: 0,
+                transition: { duration: 2, delay: 0.5 },
+              },
+              hidden: { opacity: 0, y: -100 },
+            }}
+          >
             <div
               className={
                 !props.isAllIconsClicked
@@ -138,7 +164,7 @@ export default function AboutSection(props) {
                   : "about__overlay about__overlay-active"
               }
             ></div>
-          </div>
+          </motion.div>
         </div>
 
         <motion.div
@@ -150,7 +176,7 @@ export default function AboutSection(props) {
             visible: {
               opacity: 1,
               y: 0,
-              transition: { duration: 1, delay: 0.5 },
+              transition: { duration: 2, delay: 0.5 },
             },
             hidden: { opacity: 0, y: -100 },
           }}

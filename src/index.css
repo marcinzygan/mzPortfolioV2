@@ -551,10 +551,10 @@ section {
   line-height: 25px;
 }
 .about__span-title {
-  font-size: var(--fs-h2);
+  font-size: var(--fs-h1);
   font-weight: var(--fw-bold);
   display: block;
-  padding-bottom: 0.25rem;
+  padding-bottom: 2rem;
   line-height: 1.1;
 }
 .span__about-bottom {
@@ -586,9 +586,11 @@ section {
   width: 195px;
   background-color: #272222;
   z-index: 100;
+  clip-path: circle(120% at 50% 50%);
+  transition: all 0.75s ease-in-out;
 }
 .about__overlay-active {
-  display: none;
+  clip-path: circle(0% at 50% 50%);
 }
 .about__rectangle1 {
   height: 45px;
@@ -610,12 +612,13 @@ section {
 }
 .html__icon {
   position: absolute;
-  top: -10%;
-  left: 50%;
-  transform: translate(-50%, 10%);
+  top: -8%;
+  left: 42%;
+  /* transform: translate(-50%, 10%); */
   color: var(--clr-grayLight);
   cursor: pointer;
   z-index: 2;
+  animation: scale 4s ease-in-out infinite;
 }
 .html__icon-active {
   color: var(--clr-accent);
@@ -623,11 +626,12 @@ section {
 .css__icon {
   position: absolute;
   bottom: -8%;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  left: 42%;
+  /* transform: translate(-50%, 0%); */
   color: var(--clr-grayLight);
   cursor: pointer;
   z-index: 2;
+  animation: scale 4s ease-in-out infinite;
 }
 .css__icon-active {
   color: var(--clr-accent);
