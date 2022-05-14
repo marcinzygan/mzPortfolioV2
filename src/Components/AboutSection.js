@@ -132,7 +132,7 @@ export default function AboutSection(props) {
                 y: 0,
                 transition: { duration: 2, delay: 0.5 },
               },
-              hidden: { opacity: 0, y: -100 },
+              hidden: { opacity: 0, y: -20 },
             }}
           >
             <div
@@ -152,9 +152,9 @@ export default function AboutSection(props) {
               visible: {
                 opacity: 1,
                 y: 0,
-                transition: { duration: 2, delay: 0.5 },
+                transition: { duration: 2, delay: 1.5 },
               },
-              hidden: { opacity: 0, y: -100 },
+              hidden: { opacity: 0, y: -20 },
             }}
           >
             <div

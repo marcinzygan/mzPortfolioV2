@@ -4,7 +4,6 @@ import Heading from "./Heading";
 import Project from "./Project";
 import Modal from "./Modal";
 import Shapes from "../Images/about__shapes.svg";
-import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 
 export default function WorkSection(props) {
@@ -40,12 +39,7 @@ export default function WorkSection(props) {
         hidden: { opacity: 0, x: 10 },
       }}
     >
-      <Link
-        onClick={() => modalContentChange(data)}
-        to="work"
-        smooth={true}
-        offset={-15}
-      >
+     
         <Project
           // key={data.id}
           projectImg={data.mainImage}
@@ -57,7 +51,7 @@ export default function WorkSection(props) {
           // projectContent3={data.content3}
           onClick={() => modalContentChange(data)}
         />
-      </Link>
+     
     </motion.div>
   ));
 
