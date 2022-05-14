@@ -30,7 +30,6 @@ body {
   font-family: var(--ff-primary);
   font-size: var(--fs-body);
   color: var(--clr-black);
-  width: 100vw;
 }
 img {
   width: 100%;
@@ -104,16 +103,17 @@ section {
     height: 100vh;
     width: 100%;
     /* Hide nav links */
-    transform: translateY(-150%);
+    /* transform: translateY(-150%); */
+    clip-path: circle(0% at 50% 0);
     /* end */
-    transition: all 0.9s ease;
-    background-color: white;
+    transition: all 0.75s ease-in-out;
+    background-color: rgb(250, 250, 250);
     opacity: 0.98;
     z-index: 100;
   }
   .nav__open {
     /* show links */
-    transform: translateY(0);
+    clip-path: circle(150% at 50% 0);
   }
 }
 
@@ -381,6 +381,7 @@ section {
   pointer-events: all;
   z-index: 2000;
   opacity: 1;
+  padding-top: 2rem;
 }
 .modal__back-btn {
   display: block;
@@ -396,7 +397,7 @@ section {
 }
 .modal__container {
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
 }
 .modal__title {
   font-family: var(--ff-secondary);
@@ -438,6 +439,12 @@ section {
   font-size: var(--fs-heading);
   line-height: 1.6;
   letter-spacing: 1px;
+}
+.modal__list-title {
+  padding: 2rem 0 1rem 0;
+  font-size: var(--fs-h2);
+  color: var(--clr-grayStrong);
+  font-weight: var(--fw-bold);
 }
 .modal__li {
   padding: 0.5rem 0;
@@ -533,9 +540,22 @@ section {
 .about__section {
   position: relative;
 }
+.about__txt-top {
+  padding: 2rem 0;
+}
+.about__txt-bottom {
+  padding: 2rem 0;
+}
 .about__txt {
   padding: 1rem 0;
   line-height: 25px;
+}
+.about__span-title {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  display: block;
+  padding-bottom: 0.25rem;
+  line-height: 1.1;
 }
 .span__about-bottom {
   display: flex;
@@ -677,6 +697,7 @@ section {
   display: flex;
   flex-direction: column;
   max-width: 500px;
+  margin: 0 auto;
 }
 .email__message {
   position: absolute;
@@ -745,7 +766,7 @@ section {
   padding-bottom: 0.3rem;
 }
 .socials__container {
-  padding-top: 2rem;
+  padding: 2rem 0;
   display: flex;
   gap: 0.5rem;
 }
@@ -869,6 +890,12 @@ section {
 
 /* MEDIA QUERIES */
 @media (min-width: 360px) {
+  .hero__h1 {
+    padding: 2rem 2rem 0 2rem;
+  }
+  .hero__h2 {
+    padding: 2rem 2rem 0 2rem;
+  }
   .project__img {
     height: 60px;
     width: 300px;
@@ -879,9 +906,7 @@ section {
   section {
     padding: 2rem;
   }
-  .modal__open {
-    padding: 2rem;
-  }
+
   .slider__img {
     height: 200px;
   }
