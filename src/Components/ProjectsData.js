@@ -74,7 +74,7 @@ export const ProjectsData = [
   {
     id: 3,
     name: "Graphic Design",
-    mainImage: require("../Images/Projects/Graphic Design/1.jpg"),
+    mainImage: require("../Images/Projects/Graphic Design/graphicintro.jpg"),
     images: [
       require("../Images/Projects/Graphic Design/1.jpg"),
       require("../Images/Projects/Graphic Design/2.jpg"),
@@ -96,8 +96,11 @@ export const ProjectsData = [
     name: "Github Projects",
     mainImage: require("../Images/Projects/Github/githubintro.jpg"),
     images: [
-      "https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-      "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
+      require("../Images/Projects/Github/1.jpg"),
+      require("../Images/Projects/Github/2.jpg"),
+      require("../Images/Projects/Github/3.jpg"),
+      require("../Images/Projects/Github/4.jpg"),
+      require("../Images/Projects/Github/5.jpg"),
     ],
     contentTitle:  "Some of my projects that I've done while learning.",
     content: [
