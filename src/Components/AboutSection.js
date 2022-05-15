@@ -103,11 +103,11 @@ export default function AboutSection(props) {
             />
 
             <div className="inner__circle">
-              <img
+              {/* <img
                 className="puppet"
                 src="https://c.tenor.com/6On54eyPJNkAAAAC/run-forrest-puppet.gif"
                 alt="puppet"
-              ></img>
+              ></img> */}
             </div>
 
             <div

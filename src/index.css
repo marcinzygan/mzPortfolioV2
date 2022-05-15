@@ -582,33 +582,29 @@ section {
   z-index: 2;
 }
 .about__overlay {
-  height: 45px;
-  width: 195px;
+  height: 60px;
+  width: 250px;
   background-color: #272222;
   z-index: 100;
   clip-path: circle(120% at 50% 50%);
-  transition: all 0.75s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .about__overlay-active {
   clip-path: circle(0% at 50% 50%);
 }
-.about__rectangle1 {
-  height: 45px;
-  width: 195px;
-  background-image: url(.//Images/marcin.jpg);
+.about__rectangle1 , 
+.about__rectangle2  {
+  height: 60px;
+  width: 250px;
+  background-image: url(.//Images/1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
   margin-bottom: 1rem;
 }
 .about__rectangle2 {
-  height: 45px;
-  width: 195px;
-  background-image: url(.//Images/hero2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0 auto;
-  margin-bottom: 1rem;
+  background-image: url(.//Images/2.jpg);
+  
 }
 .html__icon {
   position: absolute;
@@ -686,14 +682,7 @@ section {
   border-radius: 50%;
   z-index: -1;
 }
-.puppet {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
-  width: 120px;
-  height: 120px;
-}
+
 /* CONTACT SECTION */
 
 .form__container {
@@ -999,16 +988,13 @@ section {
     margin-left: auto;
   }
   .about__overlay {
-    height: 80px;
-    width: 360px;
+    width: 450px;
+    height: 100px;
   }
-  .about__rectangle1 {
-    height: 80px;
-    width: 360px;
-  }
+  .about__rectangle1,
   .about__rectangle2 {
-    height: 80px;
-    width: 360px;
+    width: 450px;
+    height: 100px;
   }
   .contact__container {
     margin-top: 4rem;
@@ -1177,12 +1163,6 @@ section {
     margin-right: auto;
     grid-column: 1/2;
     grid-row: 2/3;
-    gap: 2rem;
-  }
-  .about__rectangle1,
-  .about__rectangle2 {
-    width: 450px;
-    height: 100px;
   }
   .about__animation {
     width: 300px;
