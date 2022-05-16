@@ -3,7 +3,7 @@ import { ProjectsData } from "./ProjectsData";
 import Heading from "./Heading";
 import Project from "./Project";
 import Modal from "./Modal";
-import Shapes from "../Images/workShapes.svg";
+import Shapes from "../Images/myWork.svg";
 import { motion } from "framer-motion";
 
 export default function WorkSection(props) {
@@ -73,13 +73,13 @@ export default function WorkSection(props) {
         </div>
 
         <motion.div
-          className="about__shapes-container"
+          className="work__shapes-container"
           initial={"hidden"}
           whileInView={"visible"}
           viewport={{ once: true }}
           variants={{
             visible: {
-              opacity: 0.8,
+              opacity: 1,
               x: 0,
               transition: { duration: 3, delay: 0.2 },
             },

@@ -82,12 +82,12 @@ section {
   cursor: pointer;
   font-family: var(--ff-primary);
   font-weight: var(--fw-bold);
-  color: var(--clr-grayLight);
+  color: var(--clr-black);
   font-size: var(--fs-nav);
   padding: 0.5rem 2rem;
 }
 .nav__link:hover {
-  border: 1px solid var(--clr-grayLight);
+  border: 1px solid var(--clr-black);
   color: var(--clr-accent);
   margin: -1px;
 }
@@ -107,7 +107,7 @@ section {
     clip-path: circle(0% at 50% 0);
     /* end */
     transition: all 0.95s ease-in-out;
-    background-color: black;
+    background-color: var(--clr-grayLight);
     opacity: 0.98;
     z-index: 100;
   }
@@ -260,7 +260,7 @@ section {
   position: relative;
   width: max-content;
   color: var(--clr-black);
-  animation: glitch 4s 4.02s infinite;
+  animation: glitch 5s 5.02s infinite;
 }
 .sections__heading::after {
   content: "";
@@ -297,6 +297,7 @@ section {
   max-height: 400px;
   max-width: 400px;
   margin: 0 auto;
+  
 }
 .project__background {
   display: flex;
@@ -355,10 +356,10 @@ section {
 .project__container::after {
   content: "";
   position: absolute;
-  height: 35px;
-  width: 35px;
+  height: 25px;
+  width: 25px;
   border-radius: 50%;
-  background-color: var(--clr-black);
+  background-color: var(--clr-grayLight);
   left: -2%;
   bottom: -6%;
   transition: 0.5s ease-in;
@@ -558,7 +559,7 @@ section {
   display: block;
   padding-bottom: 2rem;
   line-height: 1.1;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   animation: glitch 5s 5.02s infinite;
 }
 .span__about-bottom {
