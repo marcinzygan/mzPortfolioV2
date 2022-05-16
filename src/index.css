@@ -557,6 +557,7 @@ section {
   display: block;
   padding-bottom: 2rem;
   line-height: 1.1;
+  letter-spacing: 5px;
   animation: glitch 5s 5.02s infinite;
 }
 .span__about-bottom {

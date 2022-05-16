@@ -8,7 +8,7 @@ export default function AboutSection(props) {
     <section id="about" className="about__section">
       <Heading
         sectionHeading={"About Me"}
-        sectionSubHeading={"Few words about myself."}
+        sectionSubHeading={`"Stay awhile and listen."`}
       />
 
       <div className="about__container">

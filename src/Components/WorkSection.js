@@ -3,7 +3,7 @@ import { ProjectsData } from "./ProjectsData";
 import Heading from "./Heading";
 import Project from "./Project";
 import Modal from "./Modal";
-import Shapes from "../Images/about__shapes.svg";
+import Shapes from "../Images/workShapes.svg";
 import { motion } from "framer-motion";
 
 export default function WorkSection(props) {
@@ -41,14 +41,10 @@ export default function WorkSection(props) {
     >
      
         <Project
-          // key={data.id}
           projectImg={data.mainImage}
           images={data.images}
           alt={data.name}
           projectName={data.name}
-          // projectContent={data.content}
-          // projectContent2={data.content2}
-          // projectContent3={data.content3}
           onClick={() => modalContentChange(data)}
         />
      
