@@ -82,7 +82,7 @@ section {
   cursor: pointer;
   font-family: var(--ff-primary);
   font-weight: var(--fw-bold);
-  color: var(--clr-black);
+  color: var(--clr-grayStrong);
   font-size: var(--fs-nav);
   padding: 0.5rem 2rem;
 }
