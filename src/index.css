@@ -82,7 +82,7 @@ section {
   cursor: pointer;
   font-family: var(--ff-primary);
   font-weight: var(--fw-bold);
-  color: var(--clr-grayStrong);
+  color: var(--clr-black);
   font-size: var(--fs-nav);
   padding: 0.5rem 2rem;
 }
@@ -108,7 +108,7 @@ section {
     /* end */
     transition: all 0.95s ease-in-out;
     background-color: var(--clr-grayLight);
-    opacity: 0.98;
+    opacity: 0.999;
     z-index: 100;
   }
   .nav__open {
@@ -940,6 +940,9 @@ section {
   }
   .nav {
     padding: 2rem 3rem;
+  }
+  .nav__link{
+    color: var(--clr-grayStrong);
   }
   /* DONT SHOW BUTTON ON SCREEN MORE THEN 800PX */
   .nav__button {
