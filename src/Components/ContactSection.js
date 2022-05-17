@@ -52,7 +52,7 @@ export default function ConstactSection() {
           ></img>
           <div className="details__container">
             <p className="details__txt">Marcin Zygan</p>
-            <p className="details__txt">Phone: +44 123 456 789</p>
+            <p className="details__txt">Phone: +44 75 487 000 99</p>
             <p className="details__txt">Email: zygandesign@gmail.com</p>
 
             <div className="socials__container">
