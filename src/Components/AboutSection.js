@@ -55,16 +55,15 @@ export default function AboutSection(props) {
             following how web design is evolving during these many years .
             <br></br>
             <br></br>
-            In late 2021 I have decided that I want to become Front-end
-            Developer. I started learning from basics Html , Css , and
+            In 2021 I have decided that I want to become Front-end
+            Developer. I started learning from basics HTML , CSS , and
             JavaScript , and in early 2022 I started a part-time career as a
             freelance Web Developer and Graphic Designer.<br></br>
-            <br></br>I am highly motivated to switch from Chef to Front-end
-            Developer full time , and Hopefully I will find my dream job so I
-            can progress quicker .<br></br>
+            <br></br>I am highly motivated to switch from Chef to Front-end 
+            Developer full time , and hopefully, soon, I will find my dream job so I can progress quicker .<br></br>
             <br></br>
-            Currently I am learning React; in fact this website is fully powered
-            by React.
+            Currently I am learning React; in fact this website is built
+            in React.
           </p>
           <span className="span span__about-bottom">{"</p>"}</span>
           <br></br>
