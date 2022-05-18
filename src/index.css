@@ -103,17 +103,18 @@ section {
     height: 100vh;
     width: 100%;
     /* Hide nav links */
-    /* transform: translateY(-150%); */
-    clip-path: circle(0% at 50% 0);
+    transform: translateX(-150%);
+    /* clip-path: circle(0% at 50% 0); */
     /* end */
-    transition: all 0.45s ease-in-out;
+    transition: all 0.65s ease-in-out;
     background-color: var(--clr-grayLight);
     opacity: 0.999;
     z-index: 100;
   }
   .nav__open {
     /* show links */
-    clip-path: circle(150% at 50% 0);
+    /* clip-path: circle(150% at 50% 0); */
+    transform: translateX(0);
   }
 }
 
