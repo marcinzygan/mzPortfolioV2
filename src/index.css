@@ -500,10 +500,9 @@ section {
 }
 .section__number {
   font-size: 200px;
-  text-align: right;
+  /* text-align: right; */
   color: var(--clr-grayLight);
-  opacity: 0.08;
-  letter-spacing: 15px;
+  letter-spacing: 5px;
   pointer-events: none;
 }
 
@@ -937,7 +936,14 @@ section {
     padding-bottom: 4rem;
   }
   .section__number-container {
-    display: inline;
+    display: block;
+  }
+  .section__number {
+    font-size: 550px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: 0.045;
   }
   .nav {
     padding: 2rem 3rem;
@@ -983,9 +989,6 @@ section {
   .project__img {
     height: 80px;
     width: 360px;
-  }
-  .section__number {
-    font-size: 350px;
   }
   .modal__p-top {
     padding: 6rem 0;
@@ -1231,6 +1234,9 @@ section {
   }
   section {
     padding: 0 8rem;
+  }
+  .section__number{
+    font-size: 750px;
   }
   .hero__container {
     padding: 8.5rem 0 0 8rem;
