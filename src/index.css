@@ -106,7 +106,7 @@ section {
     /* transform: translateY(-150%); */
     clip-path: circle(0% at 50% 0);
     /* end */
-    transition: all 0.95s ease-in-out;
+    transition: all 0.85s ease;
     background-color: var(--clr-grayLight);
     opacity: 0.999;
     z-index: 100;
