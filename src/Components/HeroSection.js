@@ -37,7 +37,7 @@ export default function Hero() {
               <span className="span">{"</span>"}</span>{" "}
             </div>
 
-            <span className="span">{"<h2>"}</span>
+            <span className="span">{"</h2>"}</span>
           </motion.h2>
           <motion.div
             initial={{ x: -400, opacity: 0 }}
