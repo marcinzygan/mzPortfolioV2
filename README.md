@@ -16,15 +16,14 @@ I have designed this website in Coding / Geometric theme , I also wanted it to b
 
 Color choices :
 
-- ![#8f00ff](https://via.placeholder.com/15/8f00ff/000000?text=+) `#8f00ff`
-- ![#c4c4c4](https://via.placeholder.com/15/c4c4c4/000000?text=+) `#c4c4c4`
-- ![#8f00ff](https://via.placeholder.com/15/8f00ff/000000?text=+) `#8f00ff`
-- ![#8f00ff](https://via.placeholder.com/15/8f00ff/000000?text=+) `#8f00ff`
+- `#8f00ff`
+- `#c4c4c4`
+- `#736c6c`
+- `#272222`
 
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
-- ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `#c5f015`
-- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
-  Font used :
+  Fonts used :
 
 - "Inter", sans-serif
 - "Poppins", sans-serif
+
+# This website is live @ <a href="https://marcin-zygan.com">marcin-zygan.com</a>
