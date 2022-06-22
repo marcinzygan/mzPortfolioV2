@@ -20,3 +20,11 @@ Color choices :
 - ![#c4c4c4](https://via.placeholder.com/15/c4c4c4/000000?text=+) `#c4c4c4`
 - ![#8f00ff](https://via.placeholder.com/15/8f00ff/000000?text=+) `#8f00ff`
 - ![#8f00ff](https://via.placeholder.com/15/8f00ff/000000?text=+) `#8f00ff`
+
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15`
+- ![#c5f015](https://via.placeholder.com/15/c5f015/000000?text=+) `#c5f015`
+- ![#1589F0](https://via.placeholder.com/15/1589F0/000000?text=+) `#1589F0`
+  Font used :
+
+- "Inter", sans-serif
+- "Poppins", sans-serif
