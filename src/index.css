@@ -298,7 +298,6 @@ section {
   max-height: 400px;
   max-width: 400px;
   margin: 0 auto;
-  
 }
 .project__background {
   display: flex;
@@ -364,7 +363,6 @@ section {
   left: -2%;
   bottom: -6%;
   transition: 0.5s ease-in;
-  
 }
 .modal {
   background-color: white;
@@ -597,8 +595,8 @@ section {
 .about__overlay-active {
   clip-path: circle(0% at 50% 50%);
 }
-.about__rectangle1 , 
-.about__rectangle2  {
+.about__rectangle1,
+.about__rectangle2 {
   height: 60px;
   width: 250px;
   background-image: url(.//Images/1.jpg);
@@ -609,7 +607,6 @@ section {
 }
 .about__rectangle2 {
   background-image: url(.//Images/2.jpg);
-  
 }
 .html__icon {
   position: absolute;
@@ -948,7 +945,7 @@ section {
   .nav {
     padding: 2rem 3rem;
   }
-  .nav__link{
+  .nav__link {
     color: var(--clr-grayStrong);
   }
   /* DONT SHOW BUTTON ON SCREEN MORE THEN 800PX */
@@ -1235,7 +1232,7 @@ section {
   section {
     padding: 0 8rem;
   }
-  .section__number{
+  .section__number {
     font-size: 750px;
   }
   .hero__container {
@@ -1319,10 +1316,10 @@ section {
   }
 }
 @keyframes glitch {
-  1%{
+  1% {
     transform: rotateX(10deg) skewX(70deg);
   }
-  2%{
+  2% {
     transform: rotateX(0deg) skewX(0deg);
   }
 }
