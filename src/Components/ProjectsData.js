@@ -1,6 +1,41 @@
 export const ProjectsData = [
   {
     id: 1,
+    name: "Hearthstone Battlegrounds",
+    mainImage: require("../Images/Projects/Hearthstone/intro.jpg"),
+    images: [
+      require("../Images/Projects/Hearthstone/1.jpg"),
+      require("../Images/Projects/Hearthstone/2.jpg"),
+      require("../Images/Projects/Hearthstone/3.jpg"),
+    ],
+    contentTitle: "Browse and learn Hearthstone Battlegrounds cards",
+    content: [
+      "This project is using Hearthstone API.",
+
+      "This project is built in React and is using Redux toolkit as state managment.",
+    ],
+    listTitle: "Features implemented :",
+    list: {
+      item1: "Figma design for desktop and mobile screens",
+      item2: "CSS styling",
+      item3: "Mobile and desktop responsive via CSS Media queries",
+      item4: "Display Loading component when app is loading",
+      item5: "Add and remove cards from favorites",
+      item6: "Filter options for cards",
+      item7:
+        "Ability to move to next page , previous page , last page and first page",
+      item8: "Local storage to keep favorite cards saved",
+    },
+
+    links: [
+      {
+        name: "Hearthstone Battlegrounds app Live",
+        link: "https://hs-battlegrounds.netlify.app/",
+      },
+    ],
+  },
+  {
+    id: 2,
     name: "Project Gutenberg App",
     mainImage: require("../Images/Projects/Gutenberg/intro.jpg"),
     images: [
@@ -35,7 +70,7 @@ export const ProjectsData = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     name: "Shipmodels",
     mainImage: require("../Images/Projects/Shipmodels/shipintro.jpg"),
     images: [
@@ -74,7 +109,7 @@ export const ProjectsData = [
   },
 
   {
-    id: 3,
+    id: 4,
     name: "Rebelinska Art",
     mainImage: require("../Images/Projects/AR art/arintro.jpg"),
     images: [
@@ -109,7 +144,7 @@ export const ProjectsData = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     name: "Graphic Design",
     mainImage: require("../Images/Projects/Graphic Design/graphicintro.jpg"),
     images: [
@@ -130,7 +165,7 @@ export const ProjectsData = [
     links: [{ name: "Here", link: "https://www.behance.net/marcin-zygan" }],
   },
   {
-    id: 5,
+    id: 6,
     name: "Github Projects",
     mainImage: require("../Images/Projects/Github/githubintro.jpg"),
     images: [
