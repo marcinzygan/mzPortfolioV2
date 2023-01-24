@@ -60,8 +60,9 @@ export default function AboutSection(props) {
             early 2022 I started a part-time career as a freelance Web Developer
             and Graphic Designer.<br></br>
             <br></br>In 2023 I have started Full time job as a E-commerce
-            manager.<br></br>I am still learning new features on daily basis to
-            progress my career further and in the future become FullStack dev.
+            manager.<br></br>I am still learning new features on a daily basis
+            to progress my career further and become FullStack dev in the
+            future.
             <br></br>
             <br></br>
             My current tech : HTML , CSS , JS , React , NextJS .
