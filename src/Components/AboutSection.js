@@ -59,12 +59,12 @@ export default function AboutSection(props) {
             started learning from basics HTML , CSS , and JavaScript , and in
             early 2022 I started a part-time career as a freelance Web Developer
             and Graphic Designer.<br></br>
-            <br></br>I am highly motivated to switch from Chef to Front-end
-            Developer full time , and hopefully, soon, I will find my dream job
-            so I can progress quicker .<br></br>
+            <br></br>In 2023 I have started Full time job as a E-commerce
+            manager.<br></br>I am still learning new features on daily basis to
+            progress my career further and in the future become FullStack dev.
             <br></br>
-            Currently I am learning React; in fact this website is built in
-            React.
+            <br></br>
+            My current tech : HTML , CSS , JS , React , NextJS .
           </p>
           <span className="span span__about-bottom">{"</p>"}</span>
           <br></br>
