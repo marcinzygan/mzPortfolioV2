@@ -36,18 +36,18 @@ export const ProjectsData = [
   },
   {
     id: 2,
-    name: "Comptrends.eu",
-    mainImage: require("../Images/Projects/BlogWhite/blogwhite2.jpg"),
+    name: "Comptrends",
+    mainImage: require("../Images/Projects/Comptrends/comptrends1.jpg"),
     images: [
-      require("../Images/Projects/BlogWhite/blogwhite1.jpg"),
-      require("../Images/Projects/BlogWhite/blogwhite2.jpg"),
-      require("../Images/Projects/BlogWhite/blogwhite3.jpg"),
+      require("../Images/Projects/Comptrends/comptrends2.jpg"),
+      require("../Images/Projects/Comptrends/comptrends1.jpg"),
+      require("../Images/Projects/Comptrends/comptrends3.jpg"),
     ],
     contentTitle:
       "Website built for a company that provides webscraping data solutions.",
     content: [
       "Comptrends delivers data for your business.",
-
+      "By staying informed on the latest trends and changes in your industry, you'll be able to make smarter decisions and stay competitive.",
       "This website is built whith NextJS and Redux Toolkit.",
     ],
     listTitle: "Features implemented :",
@@ -70,23 +70,23 @@ export const ProjectsData = [
   },
   {
     id: 3,
-    name: "Rezon.eu Catalogue",
-    mainImage: require("../Images/Projects/BlogWhite/blogwhite2.jpg"),
+    name: "Rezon Catalogue",
+    mainImage: require("../Images/Projects/Rezon/rezon1.jpg"),
     images: [
-      require("../Images/Projects/BlogWhite/blogwhite1.jpg"),
-      require("../Images/Projects/BlogWhite/blogwhite2.jpg"),
-      require("../Images/Projects/BlogWhite/blogwhite3.jpg"),
+      require("../Images/Projects/Rezon/rezon2.jpg"),
+      require("../Images/Projects/Rezon/rezon1.jpg"),
+      require("../Images/Projects/Rezon/rezon3.jpg"),
     ],
     contentTitle: "Online product catalogue for Rezon.eu",
     content: [
-      "Product catalouge with 280+ products and 17 categories for company that produces gifts and souvenirs.",
+      "Product catalouge with 280+ products and 17 categories for a company that produces gifts and souvenirs.",
 
       "Online catalogue used by sales team to showcase products to potential clients.",
-      "Main requirement for this project was to be mobile responsive.",
+      "Main requirement for this project was to be mobile responsive with categories and ability to search for a product.",
     ],
     listTitle: "Features implemented :",
     list: {
-      item1: "Figma design for desktop and mobile screens",
+      item1: "Design for desktop and mobile screens",
       item2: "CSS styling using modules",
       item3: "Mobile and desktop responsiveness via CSS Media queries",
       item4: "Slider and mini slider built to showcase product images",
