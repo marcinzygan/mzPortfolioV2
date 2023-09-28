@@ -1,6 +1,75 @@
 export const ProjectsData = [
   {
     id: 1,
+    name: "Blog and White",
+    mainImage: require("../Images/Projects/BlogWhite/blogwhite2.jpg"),
+    images: [
+      require("../Images/Projects/BlogWhite/blogwhite1.jpg"),
+      require("../Images/Projects/BlogWhite/blogwhite2.jpg"),
+      require("../Images/Projects/BlogWhite/blogwhite3.jpg"),
+    ],
+    contentTitle:
+      "Blog platform that's using Hygraph CMS for content managment.",
+    content: [
+      "Post your Blogs with ease using Hygraph Content Managment System.",
+
+      "This project is built whith NextJS and Hygraph CMS.",
+    ],
+    listTitle: "Features implemented :",
+    list: {
+      item1: "Figma design for desktop and mobile screens",
+      item2: "CSS styling using modules",
+      item3: "Mobile and desktop responsiveness via CSS Media queries",
+      item4: "This project is using NextJS server components",
+      item5:
+        "Implemented different API fetch methods for all posts , posts categories , single post etc..",
+      item6: "Read URL params and display blog post and categories by slug",
+      item7: "Added pagination for posts with limit to 30 per page",
+    },
+
+    links: [
+      {
+        name: "Blog and White Live page",
+        link: "https://thatsblogs.vercel.app/",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "Comptrends.eu",
+    mainImage: require("../Images/Projects/BlogWhite/blogwhite2.jpg"),
+    images: [
+      require("../Images/Projects/BlogWhite/blogwhite1.jpg"),
+      require("../Images/Projects/BlogWhite/blogwhite2.jpg"),
+      require("../Images/Projects/BlogWhite/blogwhite3.jpg"),
+    ],
+    contentTitle:
+      "Website built for a company that provides webscraping data solutions.",
+    content: [
+      "Comptrends delivers data for your business.",
+
+      "This website is built whith NextJS and Redux Toolkit.",
+    ],
+    listTitle: "Features implemented :",
+    list: {
+      item1: "Figma design for desktop and mobile screens",
+      item2: "CSS styling using modules",
+      item3: "Mobile and desktop responsiveness via CSS Media queries",
+      item4: "Animations built with FramerMotion",
+      item5: "react-intersection-observer used for left scroll-menu",
+      item6: "Redux Toolkit used for state managment",
+      item7: "EmailJs used for contact form",
+    },
+
+    links: [
+      {
+        name: "Comptrends.eu Live page",
+        link: "https://comptrends.eu/",
+      },
+    ],
+  },
+  {
+    id: 1,
     name: "Hearthstone Battlegrounds",
     mainImage: require("../Images/Projects/Hearthstone/intro.jpg"),
     images: [
@@ -69,80 +138,80 @@ export const ProjectsData = [
       },
     ],
   },
-  {
-    id: 3,
-    name: "Shipmodels",
-    mainImage: require("../Images/Projects/Shipmodels/shipintro.jpg"),
-    images: [
-      require("../Images/Projects/Shipmodels/ship1.jpg"),
-      require("../Images/Projects/Shipmodels/ship2.jpg"),
-      require("../Images/Projects/Shipmodels/ship3.jpg"),
-      require("../Images/Projects/Shipmodels/ship4.jpg"),
-      require("../Images/Projects/Shipmodels/ship5.jpg"),
-    ],
-    contentTitle:
-      "Shipmodels is a company that specializes in building quality and detailed models of ships .",
-    content: [
-      "The current company website had to be re-designed and built from scratch . Website has to be mobile friendly end SEO optimized. This project was done together with my brother Grzegorz Zygan .",
+  // {
+  //   id: 3,
+  //   name: "Shipmodels",
+  //   mainImage: require("../Images/Projects/Shipmodels/shipintro.jpg"),
+  //   images: [
+  //     require("../Images/Projects/Shipmodels/ship1.jpg"),
+  //     require("../Images/Projects/Shipmodels/ship2.jpg"),
+  //     require("../Images/Projects/Shipmodels/ship3.jpg"),
+  //     require("../Images/Projects/Shipmodels/ship4.jpg"),
+  //     require("../Images/Projects/Shipmodels/ship5.jpg"),
+  //   ],
+  //   contentTitle:
+  //     "Shipmodels is a company that specializes in building quality and detailed models of ships .",
+  //   content: [
+  //     "The current company website had to be re-designed and built from scratch . Website has to be mobile friendly end SEO optimized. This project was done together with my brother Grzegorz Zygan .",
 
-      "I was doing Frontend development and Graphic Design . The whole Backend was done by Grzegorz Zygan.",
-    ],
-    listTitle: "Features implemented :",
-    list: {
-      item1: "Figma design for desktop and mobile screens",
-      item2: "Website built in Html",
-      item3: "CSS styling",
-      item4: "Mobile and desktop responsive via CSS Media queries",
-      item5: "Mobile navbar (hamburger menu) JS",
-      item6: "Modal JS",
-      item7: "Image Slider JS",
-      item8: "Back to home button JS",
-      item9: "Dynamic date set in footer JS",
-    },
+  //     "I was doing Frontend development and Graphic Design . The whole Backend was done by Grzegorz Zygan.",
+  //   ],
+  //   listTitle: "Features implemented :",
+  //   list: {
+  //     item1: "Figma design for desktop and mobile screens",
+  //     item2: "Website built in Html",
+  //     item3: "CSS styling",
+  //     item4: "Mobile and desktop responsive via CSS Media queries",
+  //     item5: "Mobile navbar (hamburger menu) JS",
+  //     item6: "Modal JS",
+  //     item7: "Image Slider JS",
+  //     item8: "Back to home button JS",
+  //     item9: "Dynamic date set in footer JS",
+  //   },
 
-    links: [
-      {
-        name: "GitHub Case Study",
-        link: "https://github.com/sbtah/shipmodels-django-site",
-      },
-    ],
-  },
+  //   links: [
+  //     {
+  //       name: "GitHub Case Study",
+  //       link: "https://github.com/sbtah/shipmodels-django-site",
+  //     },
+  //   ],
+  // },
 
-  {
-    id: 4,
-    name: "Rebelinska Art",
-    mainImage: require("../Images/Projects/AR art/arintro.jpg"),
-    images: [
-      require("../Images/Projects/AR art/ar1.jpg"),
-      require("../Images/Projects/AR art/ar2.jpg"),
-      require("../Images/Projects/AR art/ar3.jpg"),
-      require("../Images/Projects/AR art/ar4.jpg"),
-    ],
-    contentTitle:
-      "Rebelinska Art is a portfolio website designed to showcase the client recent work .",
-    content: [
-      "I wanted to keep a simple and elegant look for the website to fit the art theme of this project.",
-      "The website is built in responsive technology.",
-      "First I've designed the website in Figma , and later on the design was approved by client.",
-      "Website was build in HTML , CSS and JavaScript.",
-    ],
-    listTitle: "Features implemented :",
-    list: {
-      item1: "Figma design for desktop and mobile screens",
-      item2: "Website built in Html",
-      item3: "CSS styling",
-      item4: "Mobile and desktop responsive via CSS Media queries",
-      item5: "Mobile navbar (hamburger menu) JS",
-      item6: "Back to home button JS",
-      item7: "Dynamic date set in footer JS",
-    },
-    links: [
-      {
-        name: "View live Demo",
-        link: "https://portfoliomzdesign.netlify.app",
-      },
-    ],
-  },
+  // {
+  //   id: 4,
+  //   name: "Rebelinska Art",
+  //   mainImage: require("../Images/Projects/AR art/arintro.jpg"),
+  //   images: [
+  //     require("../Images/Projects/AR art/ar1.jpg"),
+  //     require("../Images/Projects/AR art/ar2.jpg"),
+  //     require("../Images/Projects/AR art/ar3.jpg"),
+  //     require("../Images/Projects/AR art/ar4.jpg"),
+  //   ],
+  //   contentTitle:
+  //     "Rebelinska Art is a portfolio website designed to showcase the client recent work .",
+  //   content: [
+  //     "I wanted to keep a simple and elegant look for the website to fit the art theme of this project.",
+  //     "The website is built in responsive technology.",
+  //     "First I've designed the website in Figma , and later on the design was approved by client.",
+  //     "Website was build in HTML , CSS and JavaScript.",
+  //   ],
+  //   listTitle: "Features implemented :",
+  //   list: {
+  //     item1: "Figma design for desktop and mobile screens",
+  //     item2: "Website built in Html",
+  //     item3: "CSS styling",
+  //     item4: "Mobile and desktop responsive via CSS Media queries",
+  //     item5: "Mobile navbar (hamburger menu) JS",
+  //     item6: "Back to home button JS",
+  //     item7: "Dynamic date set in footer JS",
+  //   },
+  //   links: [
+  //     {
+  //       name: "View live Demo",
+  //       link: "https://portfoliomzdesign.netlify.app",
+  //     },
+  //   ],
+  // },
   {
     id: 5,
     name: "Graphic Design",
