@@ -69,6 +69,43 @@ export const ProjectsData = [
     ],
   },
   {
+    id: 3,
+    name: "Rezon.eu Catalogue",
+    mainImage: require("../Images/Projects/BlogWhite/blogwhite2.jpg"),
+    images: [
+      require("../Images/Projects/BlogWhite/blogwhite1.jpg"),
+      require("../Images/Projects/BlogWhite/blogwhite2.jpg"),
+      require("../Images/Projects/BlogWhite/blogwhite3.jpg"),
+    ],
+    contentTitle: "Online product catalogue for Rezon.eu",
+    content: [
+      "Product catalouge with 280+ products and 17 categories for company that produces gifts and souvenirs.",
+
+      "Online catalogue used by sales team to showcase products to potential clients.",
+      "Main requirement for this project was to be mobile responsive.",
+    ],
+    listTitle: "Features implemented :",
+    list: {
+      item1: "Figma design for desktop and mobile screens",
+      item2: "CSS styling using modules",
+      item3: "Mobile and desktop responsiveness via CSS Media queries",
+      item4: "Slider and mini slider built to showcase product images",
+      item5: "Search bar to search product by name or code",
+      item6: "Redux Toolkit used for state managment",
+      item7: "Local storage used to add products to favourites",
+      item9:
+        "Modal component to display product details with storage levels image etc...",
+      item8: "EmailJs used for contact form",
+    },
+
+    links: [
+      {
+        name: "Rezon.eu Catalogue Live page",
+        link: "https://rezon-katalog.netlify.app/",
+      },
+    ],
+  },
+  {
     id: 1,
     name: "Hearthstone Battlegrounds",
     mainImage: require("../Images/Projects/Hearthstone/intro.jpg"),
