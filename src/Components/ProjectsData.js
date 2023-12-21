@@ -1,6 +1,35 @@
 export const ProjectsData = [
   {
     id: 1,
+    name: "Kołobrzeski Bieg Zaślubin",
+    mainImage: require("../Images/Projects/KolobrzeskiBieg/strona.jpg"),
+    images: [
+      require("../Images/Projects/KolobrzeskiBieg/strona.jpg"),
+      // require("../Images/Projects/KolobrzeskiBieg/strona.jpg"),
+      // require("../Images/Projects/KolobrzeskiBieg/strona.jpg"),
+    ],
+    contentTitle:
+      "Website built for Town Council of Kołobrzeg to promote a running event that is held in town since 1987.",
+    content: ["This project is built whith NextJS"],
+    listTitle: "Features implemented :",
+    list: {
+      item1: "Figma design for desktop and mobile screens",
+      item2: "CSS styling using modules",
+      item3: "Mobile and desktop responsiveness via CSS Media queries",
+      item4: "This project is using NextJS server components",
+      item5: "Read URL params and display blog post and categories by slug",
+      item6: "Added pagination for posts with limit to 6 per page",
+    },
+
+    links: [
+      {
+        name: "Kołobrzeski Bieg Zaślubin page",
+        link: "https://kolobrzeski-bieg.pl/",
+      },
+    ],
+  },
+  {
+    id: 2,
     name: "Blog and White",
     mainImage: require("../Images/Projects/BlogWhite/blogwhite2.jpg"),
     images: [
@@ -35,7 +64,7 @@ export const ProjectsData = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     name: "Comptrends",
     mainImage: require("../Images/Projects/Comptrends/comptrends1.jpg"),
     images: [
@@ -69,7 +98,7 @@ export const ProjectsData = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     name: "Rezon Catalogue",
     mainImage: require("../Images/Projects/Rezon/rezon1.jpg"),
     images: [
@@ -106,7 +135,7 @@ export const ProjectsData = [
     ],
   },
   {
-    id: 1,
+    id: 5,
     name: "Hearthstone Battlegrounds",
     mainImage: require("../Images/Projects/Hearthstone/intro.jpg"),
     images: [
@@ -141,7 +170,7 @@ export const ProjectsData = [
     ],
   },
   {
-    id: 2,
+    id: 6,
     name: "Project Gutenberg App",
     mainImage: require("../Images/Projects/Gutenberg/intro.jpg"),
     images: [
@@ -250,7 +279,7 @@ export const ProjectsData = [
   //   ],
   // },
   {
-    id: 5,
+    id: 7,
     name: "Graphic Design",
     mainImage: require("../Images/Projects/Graphic Design/graphicintro.jpg"),
     images: [
@@ -271,7 +300,7 @@ export const ProjectsData = [
     links: [{ name: "Here", link: "https://www.behance.net/marcin-zygan" }],
   },
   {
-    id: 6,
+    id: 8,
     name: "Github Projects",
     mainImage: require("../Images/Projects/Github/githubintro.jpg"),
     images: [
