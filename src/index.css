@@ -1117,6 +1117,11 @@ section {
     right: 0;
     padding: 0 2rem 8rem 0;
   }
+  .project__background {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
   .project__overlay {
     display: block;
     width: 100px;

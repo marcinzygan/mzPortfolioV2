@@ -45,27 +45,28 @@ export default function AboutSection(props) {
         >
           <span className="span">{"<p>"}</span>
           <p className="about__txt ">
-            <span className="about__span-title">Hello World ...</span> My name
-            is Marcin Zygan and I am Front-end Developer and Graphic Designer.
+            <span className="about__span-title">Hello World ...</span> I'm
+            Marcin Zygan skilled in Front-end Development and Graphic Design.
             <br></br>
-            <br></br>I created my first website in 2001 . <br></br>
-            It was a website for Diablo 2 gaming community.<br></br>
-            Althoug I didn't pursue a web developer career for many years.
-            <br></br>I became a professional Chef instead .<br></br>I was still
-            following how web design is evolving during these many years .
+            <br></br>I created my first website back in 2001 for a gaming
+            community.<br></br>
+            Although I didn't initially pursue a web development career, I
+            became a professional Chef instead.
+            <br></br>However, I kept an eye on the evolving landscape of web
+            design over the years.
             <br></br>
             <br></br>
-            In 2021 I have decided that I want to become Front-end Developer. I
-            started learning from basics HTML , CSS , and JavaScript , and in
-            early 2022 I started a part-time career as a freelance Web Developer
+            In 2021, I decided to pivot back to my interest in web development.
+            I refreshed my knowledge of HTML, CSS, and JavaScript, and by early
+            2022, I embarked on a part-time career as a freelance Web Developer
             and Graphic Designer.<br></br>
-            <br></br>In 2023 I have started Full time job as a E-commerce
-            manager.<br></br>I am still learning new features on a daily basis
-            to progress my career further and become FullStack dev in the
-            future.
+            <br></br>By 2023, I transitioned into a full-time role as an
+            E-commerce Manager. I continue to expand my skills daily, aiming to
+            progress towards becoming a FullStack developer in the future.
             <br></br>
             <br></br>
-            My current tech : HTML , CSS , JS , React , NextJS .
+            My current tech : HTML , CSS , JS , React , NextJS , Node.js ,
+            Express.
           </p>
           <span className="span span__about-bottom">{"</p>"}</span>
           <br></br>
@@ -184,7 +185,7 @@ export default function AboutSection(props) {
             And when there is no wind, I have a backup plan. Standup paddle
             boarding .<br></br>
             <br></br>I also love running and to this day I have completed 1
-            Marathon and 22 Half Marathons .<br></br>
+            Marathon and 25 Half Marathons .<br></br>
           </p>
           <span className="span span__about-bottom">{"</p>"}</span>
         </motion.div>

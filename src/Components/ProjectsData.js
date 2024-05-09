@@ -1,5 +1,34 @@
 export const ProjectsData = [
   {
+    id: 8,
+    name: "Nadmorscy Biegacze",
+    mainImage: require("../Images/Projects/NadmorscyBiegacze/1.jpg"),
+    images: [
+      require("../Images/Projects/NadmorscyBiegacze/1.jpg"),
+      require("../Images/Projects/NadmorscyBiegacze/2.jpg"),
+    ],
+    contentTitle:
+      "This website is buit for the running association in Kołobrzeg town. The primary goal of the assoctiation is to advocate for running as a lifestyle choice and inspire individuals to engage in physical activity",
+    content: ["This project is built whith NextJS"],
+    listTitle: "Features implemented :",
+    list: {
+      item1: "Figma design for desktop and mobile screens",
+      item2: "Logo design",
+      item3: "CSS styling using modules",
+      item4: "Mobile and desktop responsiveness via CSS Media queries",
+      item5: "This project is using NextJS server components",
+      item6: "Read URL params and display news post and categories by slug",
+      item7: "Pagination for posts with limit to 6 per page",
+    },
+
+    links: [
+      {
+        name: "Nadmorscy Biegacze page",
+        link: "https://nadmorscy-biegacze.pl/",
+      },
+    ],
+  },
+  {
     id: 1,
     name: "Kołobrzeski Bieg Zaślubin",
     mainImage: require("../Images/Projects/KolobrzeskiBieg/strona.jpg"),
