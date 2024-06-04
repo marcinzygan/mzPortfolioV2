@@ -22,10 +22,10 @@ The website follows a Coding/Geometric theme and emphasizes minimalism. The colo
 
 ### Color Choices
 
-- **Primary Color**: ![#8f00ff](https://via.placeholder.com/10/8f00ff/000000?text=+) `#8f00ff`
-- **Secondary Color**: ![#c4c4c4](https://via.placeholder.com/10/c4c4c4/000000?text=+) `#c4c4c4`
-- **Accent Color**: ![#736c6c](https://via.placeholder.com/10/736c6c/000000?text=+) `#736c6c`
-- **SecondaryAccent Color**: ![#272222](https://via.placeholder.com/10/272222/000000?text=+) `#272222` <span style='color:#272222'>`#272222`</span>
+- **Primary Color**: `#8f00ff`
+- **Secondary Color**: `#c4c4c4`
+- **Accent Color**:`#736c6c`
+- **SecondaryAccent Color**: `#272222` <span style='color:red'>`#272222`</span>
 
 ### Fonts Used
 
