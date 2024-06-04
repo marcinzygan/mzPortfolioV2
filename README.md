@@ -22,10 +22,10 @@ The website follows a Coding/Geometric theme and emphasizes minimalism. The colo
 
 ### Color Choices
 
-- **Primary Color**: `#8f00ff`
+- **Primary Color**: - ![#8f00ff](https://placehold.co/15x15/f03c15/f03c15.png) `#8f00ff`
 - **Secondary Color**: `#c4c4c4`
 - **Accent Color**:`#736c6c`
-- **SecondaryAccent Color**: `#272222` <span style='color:red'>#272222</span>
+- **SecondaryAccent Color**: `#272222`
 
 ### Fonts Used
 
