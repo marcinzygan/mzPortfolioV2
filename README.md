@@ -1,29 +1,42 @@
-# This is my personal portfolio website .
+# Personal Portfolio
 
-Designed and developed April 2022.
+### Designed and Developed: April 2022
 
-What have I done :
+## Overview
 
-- Figma design for mobile and desktop screens
-- Built in React
-- CSS styles + media queries
-- Modal for displaying recent work
-- Slider for img showcase
-- Animations in CSS and Framer motion
-- Secret img feature to display after all icons are clicked in About me section .
+This project is a website designed and developed with a focus on a Coding/Geometric theme, while also maintaining a minimalist aesthetic. It features a responsive design for both mobile and desktop screens, with various interactive elements and animations.
 
-I have designed this website in Coding / Geometric theme , I also wanted it to be minimalist .
+## Features
 
-Color choices :
+- **Figma Design**: Created designs for mobile and desktop screens using Figma.
+- **React**: Built the website using React for a dynamic user experience.
+- **CSS Styles and Media Queries**: Implemented styles with CSS and ensured responsiveness with media queries.
+- **Modal**: Developed a modal to display recent work.
+- **Image Slider**: Integrated a slider for showcasing images.
+- **Animations**: Added animations using CSS and Framer Motion.
+- **Secret Image Feature**: Included a hidden feature in the About Me section, where a secret image is displayed after all icons are clicked.
 
-- `#8f00ff`
-- `#c4c4c4`
-- `#736c6c`
-- `#272222`
+## Design and Theme
 
-  Fonts used :
+The website follows a Coding/Geometric theme and emphasizes minimalism. The color palette and fonts were carefully chosen to enhance the overall aesthetic.
 
-- "Inter", sans-serif
-- "Poppins", sans-serif
+### Color Choices
 
-# This website is live @ <a href="https://marcin-zygan.com">marcin-zygan.com</a>
+- **Primary Color**: ![#8f00ff](https://via.placeholder.com/10/8f00ff/000000?text=+) `#8f00ff`
+- **Secondary Color**: ![#c4c4c4](https://via.placeholder.com/10/c4c4c4/000000?text=+) `#c4c4c4`
+- **Tertiary Color**: ![#736c6c](https://via.placeholder.com/10/736c6c/000000?text=+) `#736c6c`
+- **Background Color**: ![#272222](https://via.placeholder.com/10/272222/000000?text=+) `#272222`
+
+### Fonts Used
+
+- **Primary Font**: `"Inter", sans-serif`
+- **Secondary Font**: `"Poppins", sans-serif`
+
+
+
+## Contact
+
+Your Name - [zygandesign@gmail.com](mailto:zygandesign@gmail.com)
+
+
+## This website is live @ <a href="https://marcin-zygan.com">marcin-zygan.com</a>
