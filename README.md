@@ -23,9 +23,9 @@ The website follows a Coding/Geometric theme and emphasizes minimalism. The colo
 ### Color Choices
 
 - **Primary Color**: - ![#8f00ff](https://placehold.co/15x15/8f00ff/8f00ff.png) `#8f00ff`
-- **Secondary Color**: - ![#c4c4c4](https://placehold.co/15x15/c4c4c4/c4c4c4.png) `#c4c4c4`
-- **Accent Color**: - ![#736c6c](https://placehold.co/15x15/736c6c/736c6c.png) `#736c6c`
-- **SecondaryAccent Color**: - ![#272222](https://placehold.co/15x15/272222/272222.png)  `#272222`
+- **grayLight Color**: - ![#c4c4c4](https://placehold.co/15x15/c4c4c4/c4c4c4.png) `#c4c4c4`
+- **grayStrong Color**: - ![#736c6c](https://placehold.co/15x15/736c6c/736c6c.png) `#736c6c`
+- **Black Color**: - ![#272222](https://placehold.co/15x15/272222/272222.png)  `#272222`
 
 ### Fonts Used
 
