@@ -25,7 +25,7 @@ The website follows a Coding/Geometric theme and emphasizes minimalism. The colo
 - **Primary Color**: `#8f00ff`
 - **Secondary Color**: `#c4c4c4`
 - **Accent Color**:`#736c6c`
-- **SecondaryAccent Color**: `#272222` <span style='color:red'>`#272222`</span>
+- **SecondaryAccent Color**: `#272222` <span style='color:red'>#272222</span>
 
 ### Fonts Used
 
