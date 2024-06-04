@@ -24,8 +24,8 @@ The website follows a Coding/Geometric theme and emphasizes minimalism. The colo
 
 - **Primary Color**: ![#8f00ff](https://via.placeholder.com/10/8f00ff/000000?text=+) `#8f00ff`
 - **Secondary Color**: ![#c4c4c4](https://via.placeholder.com/10/c4c4c4/000000?text=+) `#c4c4c4`
-- **Tertiary Color**: ![#736c6c](https://via.placeholder.com/10/736c6c/000000?text=+) `#736c6c`
-- **Background Color**: ![#272222](https://via.placeholder.com/10/272222/000000?text=+) `#272222`
+- **Accent Color**: ![#736c6c](https://via.placeholder.com/10/736c6c/000000?text=+) `#736c6c`
+- **SecondaryAccent Color**: ![#272222](https://via.placeholder.com/10/272222/000000?text=+) `#272222` <span style='#272222'>`#272222`</span>
 
 ### Fonts Used
 
@@ -36,7 +36,7 @@ The website follows a Coding/Geometric theme and emphasizes minimalism. The colo
 
 ## Contact
 
-Your Name - [zygandesign@gmail.com](mailto:zygandesign@gmail.com)
+Email - [zygandesign@gmail.com](mailto:zygandesign@gmail.com)
 
 
 ## This website is live @ <a href="https://marcin-zygan.com">marcin-zygan.com</a>
