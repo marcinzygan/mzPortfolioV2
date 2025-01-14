@@ -39,4 +39,4 @@ The website follows a Coding/Geometric theme and emphasizes minimalism. The colo
 Email - [zygandesign@gmail.com](mailto:zygandesign@gmail.com)
 
 
-## This website is live @ <a href="https://marcin-zygan.com">marcin-zygan.com</a>
+## This website is live @ <a href="https://marcin.zygandesign.com">marcin.zygandesign.com</a>
