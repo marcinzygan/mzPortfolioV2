@@ -122,7 +122,7 @@ export const ProjectsData = [
     links: [
       {
         name: "Comptrends.eu Live page",
-        link: "https://comptrends.eu/",
+        link: "https://comptrendseu.netlify.app/",
       },
     ],
   },
